@@ -1,62 +1,81 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Logo from '../assets/logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello world!</h1>
-    <h2>Put your content here</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus
-      felis in congue dignissim. Phasellus cursus felis lorem. Morbi tincidunt,
-      eros sit amet feugiat semper, metus lacus lobortis neque, ut semper libero
-      lectus eu urna. Morbi posuere lectus lectus, et venenatis erat euismod ac.
-      Aenean pulvinar ullamcorper faucibus. Cras eget ligula interdum, sagittis
-      leo eu, ullamcorper mauris. Suspendisse eu elit condimentum, fermentum
-      eros non, vehicula dolor. Donec varius, est vitae semper feugiat, erat
-      urna varius nibh, eu venenatis quam ipsum at urna. Integer ut dapibus dui.
-      Nulla justo neque, ultrices nec nisl a, ullamcorper molestie erat.
-      Praesent ut ullamcorper elit.{' '}
-    </p>
-    <p>
-      Suspendisse potenti. Vivamus sapien arcu, pharetra nec consequat non,
-      vestibulum eget turpis. Class aptent taciti sociosqu ad litora torquent
-      per conubia nostra, per inceptos himenaeos. Quisque vel neque lacus. Donec
-      euismod mi at justo varius varius. Praesent luctus lectus ac vestibulum
-      aliquam. Mauris vel mauris maximus, fringilla erat laoreet, sagittis elit.
-      Nulla tincidunt ex tincidunt tortor porta viverra. Vivamus consequat magna
-      ut leo pulvinar elementum sit amet id risus. Vestibulum turpis libero,
-      ornare vitae tortor ac, iaculis rutrum felis.{' '}
-    </p>
-    <p>
-      Aenean tristique odio mauris, malesuada elementum dolor sodales vel.
-      Quisque consectetur, dolor sed pretium lobortis, massa elit pharetra
-      turpis, ultrices scelerisque magna quam vitae urna. In ac tortor
-      dignissim, faucibus enim consectetur, pulvinar nunc. Praesent vitae
-      faucibus nunc. Sed iaculis dui id efficitur vehicula. Nullam venenatis
-      purus varius consequat efficitur. Nulla sodales, ante sodales vehicula
-      volutpat, nunc sem placerat sapien, sit amet feugiat neque sem et purus.
-      Nulla orci leo, lacinia ut facilisis ac, fermentum in elit.{' '}
-    </p>
-    <p>
-      Phasellus elementum nisi et varius euismod. Nullam blandit efficitur
-      risus, id mattis tortor suscipit quis. Sed laoreet, elit fringilla varius
-      suscipit, massa neque suscipit mi, a porttitor lectus lectus sed lectus.
-      Ut placerat ultricies vehicula. Nunc vel massa fermentum, pharetra lorem
-      ac, lobortis turpis. Nam vel arcu sed erat mattis facilisis sit amet et
-      nibh. Duis consequat sed leo molestie placerat. Mauris tristique, nisi
-      eget fringilla hendrerit, velit sem sagittis velit, eu sagittis leo orci a
-      augue. Etiam faucibus ornare elit, nec vehicula metus consectetur et.
-    </p>
-    <p>
-      Aenean imperdiet magna vulputate libero molestie elementum. Donec
-      volutpat, lorem non auctor posuere, risus tortor fringilla ante, at
-      vulputate nibh enim et magna. Morbi ut nibh rutrum erat accumsan luctus.
-      Vestibulum placerat condimentum justo. In blandit est nunc, ac tristique
-      ipsum consectetur et. Suspendisse dolor odio, viverra at iaculis nec,
-      egestas a purus. Nulla porttitor varius turpis, eu viverra erat luctus id.
-      Praesent semper dapibus purus, quis finibus nibh aliquet at. Pellentesque
-      at posuere erat.
-    </p>
+    <main id="page-home">
+      <div class="center" id="hero">
+        <h1 class="title">unix<span>MiB</span></h1>
+        <Logo class="eh10" alt="unixMiB logo (a penguin)" />
+        <h2 class="subtitle normal-text ">Gruppo Utenti <span class="tinted">Linux</span></h2>
+        <h2 class="subtitle normal-text">Università Milano <span class="tinted">Bicocca</span></h2>
+      </div>
+
+      <section id="chiSiamo" class="center">
+        <a class="anchor" id="chi-siamo"></a>
+        <h2>Chi Siamo</h2>
+        <FontAwesomeIcon class="faicon" icon="users" />
+        <div class="desc">
+          <span class="hl">unixMiB</span> nasce nell'Ottobre 2015 per opera di alcuni studenti della <span class="h2">Bicocca</span> appassionati di <span class="h2">Open Source</span> e di <span class="hl">Linux</span>.
+      </div>
+      </section>
+
+      <div class="img eh15" id="foto1"></div>
+
+      <section id="cosaFacciamo" class="center">
+        <a class="anchor" id="obiettivi"></a>
+        <h2>I nostri obiettivi</h2>
+        <div class="row">
+          <div class="col">
+            <FontAwesomeIcon class="faicon" icon="flag" />
+            <h3 class="title">Eventi</h3>
+            <p class="desc">Organizziamo eventi per diffondere la filosofia dell'open source e del software libero.<br /> Hai un idea da proporre? Condividila con noi!
+          </p>
+          </div>
+          <div class="col">
+            <FontAwesomeIcon class="faicon" icon="wrench" />
+            <h3 class="title">Assistenza</h3>
+            <p class="desc">Difficoltà nell'installare Linux o problemi con qualche applicazione?<br /> Nessun problema, offriamo supporto tecnico gratuito agli studenti dell'università Bicocca per tutti gli strumenti open source.
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="img eh15" id="foto2"></div>
+
+      <section id="comeContattarci" class="center">
+        <a class="anchor" id="contattaci"></a>
+        <h2>Come contattarci</h2>
+        <div class="row">
+          <div class="col">
+            <a href="https://telegram.me/unixmib/" target="_blank">
+              <FontAwesomeIcon class="faicon" icon="telegram" />
+              <b>Gruppo Telegram</b>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://telegram.me/unixmibinfo/" target="_blank">
+              <FontAwesomeIcon class="faicon" icon="bullhorn" />
+              <b>Canale Telegram</b>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.facebook.com/unixmib/" target="_blank">
+              <FontAwesomeIcon class="faicon" icon="facebook-square" />
+              <b>Pagina Facebook</b>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://github.com/unixmib/" target="_blank">
+              <FontAwesomeIcon class="faicon" icon="github" />
+              <b>Github</b>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </Layout>
 )
 
