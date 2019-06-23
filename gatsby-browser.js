@@ -8,6 +8,6 @@ import 'bootstrap/scss/bootstrap.scss'
 import './src/styles/style.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUsers, faFlag, faWrench, faBullhorn } from '@fortawesome/free-solid-svg-icons'
-import { faTelegram, faGithub, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
-library.add(faUsers, faFlag, faWrench, faBullhorn, faTelegram, faGithub, faFacebookSquare)
+import { faUsers, faFlag, faWrench, faBullhorn, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab, faUsers, faFlag, faWrench, faBullhorn, faShoppingBag)

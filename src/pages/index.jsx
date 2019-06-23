@@ -51,7 +51,7 @@ const IndexPage = () => (
         <div class="row">
           <div class="col">
             <a href="https://telegram.me/unixmib/" target="_blank">
-              <FontAwesomeIcon class="faicon" icon="telegram" />
+              <FontAwesomeIcon class="faicon" icon={['fab', 'telegram']} />
               <b>Gruppo Telegram</b>
             </a>
           </div>
@@ -62,14 +62,20 @@ const IndexPage = () => (
             </a>
           </div>
           <div class="col">
+            <a href="https://unixmib.github.io/mercatino/" target="_blank">
+              <FontAwesomeIcon class="faicon" icon="shopping-bag" />
+              <b>Mercatino</b>
+            </a>
+          </div>
+          <div class="col">
             <a href="https://www.facebook.com/unixmib/" target="_blank">
-              <FontAwesomeIcon class="faicon" icon="facebook-square" />
+              <FontAwesomeIcon class="faicon" icon={['fab', 'facebook-square']} />
               <b>Pagina Facebook</b>
             </a>
           </div>
           <div class="col">
             <a href="https://github.com/unixmib/" target="_blank">
-              <FontAwesomeIcon class="faicon" icon="github" />
+              <FontAwesomeIcon class="faicon" icon={['fab', 'github']} />
               <b>Github</b>
             </a>
           </div>

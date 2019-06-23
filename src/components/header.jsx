@@ -5,6 +5,7 @@ import CombinationMark from '../assets/combination_mark.svg'
 const Header = ({ siteData }) => (
   <header>
     <Navbar
+      className="navbar"
       collapseOnSelect
       expand="lg"
       variant={siteData.navbarVariant}
