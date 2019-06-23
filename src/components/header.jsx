@@ -20,6 +20,7 @@ const Header = ({ siteData }) => (
           <Nav.Link href="#chi-siamo">Chi siamo</Nav.Link>
           <Nav.Link href="#obiettivi">I nostri obiettivi</Nav.Link>
           <Nav.Link href="#contattaci">Come contattarci</Nav.Link>
+          <Nav.Link href="https://unixmib.github.io/mercatino/">Come contattarci</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
