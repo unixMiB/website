@@ -1,114 +1,118 @@
 module.exports = {
-    siteMetadata: {
-        title: 'unixMiB',
+  siteMetadata: {
+    title: 'unixMiB',
+    description: 'Gruppo Utenti Linux, Università Milano Bicocca',
+    keywords: 'unixMiB, Linux, Bicocca, Università, LUG, Open Source',
+    author:
+      'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
+    theme: '#ffffff',
+    navbarVariant: 'light',
+    siteUrl: 'https://gatsby-starter-kowalski7cc.netlify.com/',
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'unixMiB',
+        short_name: 'unixMiB',
+        start_url: '/',
         description: 'Gruppo Utenti Linux, Università Milano Bicocca',
-        keywords: 'unixMiB, Linux, Bicocca, Università, LUG, Open Source',
-        author: 'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
-        theme: '#ffffff',
-        navbarVariant: 'light',
-        siteUrl: 'https://gatsby-starter-kowalski7cc.netlify.com/'
+        background_color: '#fffffa',
+        theme_color: '#343a40',
+        display: 'standalone',
+        icon: './src/assets/favicon.png',
+      },
     },
-    plugins: ['gatsby-plugin-react-helmet',
-        'gatsby-plugin-sass',
-        {
-            resolve: "gatsby-plugin-manifest",
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        appName: 'unixMiB',
+        appDescription: 'Gruppo Utenti Linux, Università Milano Bicocca',
+        developerName: 'Kowalski7cc',
+        developerURL: 'https://kowalski7cc.xyz',
+        dir: 'auto',
+        lang: 'it-IT',
+        background: '#fffffa',
+        theme_color: '#343a40',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/',
+        version: '1.0',
+        logo: './src/assets/favicon.png',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: true,
+          favicons: true,
+          firefox: true,
+          opengraph: true,
+          twitter: true,
+          yandex: true,
+          windows: true,
+        },
+      },
+    },
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-react-svg',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 70,
+      },
+    },
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
             options: {
-                name: "unixMiB",
-                short_name: "unixMiB",
-                start_url: "/",
-                description: 'Gruppo Utenti Linux, Università Milano Bicocca',
-                background_color: "#fffffa",
-                theme_color: "#343a40",
-                display: "standalone",
-                icon: './src/assets/favicon.png'
+              maxWidth: 600,
+              linkImagesToOriginal: true,
+              sizeByPixelDensity: true,
+              quality: 70,
+              withWebp: true,
             },
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-catch-links',
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/sw.js': ['Cache-Control: no-cache'],
         },
-        {
-            resolve: 'gatsby-plugin-favicon',
-            options: {
-                appName: 'unixMiB',
-                appDescription: 'Gruppo Utenti Linux, Università Milano Bicocca',
-                developerName: 'Kowalski7cc',
-                developerURL: 'https://kowalski7cc.xyz',
-                dir: 'auto',
-                lang: 'it-IT',
-                background: '#fffffa',
-                theme_color: '#343a40',
-                display: 'standalone',
-                orientation: 'any',
-                start_url: '/',
-                version: '1.0',
-                logo: "./src/assets/favicon.png",
-                icons: {
-                    android: true,
-                    appleIcon: true,
-                    appleStartup: true,
-                    coast: true,
-                    favicons: true,
-                    firefox: true,
-                    opengraph: true,
-                    twitter: true,
-                    yandex: true,
-                    windows: true
-                }
-            }
-        },
-        'gatsby-plugin-offline',
-        {
-            resolve: 'gatsby-plugin-robots-txt',
-            options: {
-                policy: [{
-                    userAgent: '*',
-                    allow: '/'
-                }]
-            }
-        },
-        'gatsby-plugin-sitemap',
-        'gatsby-plugin-react-svg',
-        {
-            resolve: 'gatsby-plugin-sharp',
-            options: {
-                useMozJpeg: true,
-                stripMetadata: true,
-                defaultQuality: 70
-            }
-        },
-        'gatsby-transformer-sharp',
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: [{
-                    resolve: 'gatsby-remark-images',
-                    options: {
-                        maxWidth: 600,
-                        linkImagesToOriginal: true,
-                        sizeByPixelDensity: true,
-                        quality: 70,
-                        withWebp: true
-                    },
-                },],
-            },
-        },
-        'gatsby-plugin-catch-links',
-        {
-            resolve: 'gatsby-plugin-netlify',
-            options: {
-                headers: {
-                    '/sw.js': [
-                        'Cache-Control: no-cache'
-                    ]
-                },
-                mergeSecurityHeaders: true,
-                mergeLinkHeaders: true,
-                mergeCachingHeaders: true,
-            }
-        },
-        {
-            resolve: 'gatsby-plugin-nprogress',
-            options: {
-                color: 'gray',
-                showSpinner: false,
-            },
-        }
-    ],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: 'gray',
+        showSpinner: false,
+      },
+    },
+  ],
 }

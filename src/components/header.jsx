@@ -10,16 +10,23 @@ const Header = ({ siteData }) => (
       expand="lg"
       variant={siteData.navbarVariant}
       style={{
-        backgroundColor: siteData.theme
+        backgroundColor: siteData.theme,
       }}
     >
-      <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/"><CombinationMark /></Navbar.Brand>
+      <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/">
+        <CombinationMark />
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className="justify-content-end"
+      >
         <Nav>
           <Nav.Link href="#chi-siamo">Chi siamo</Nav.Link>
           <Nav.Link href="#obiettivi">I nostri obiettivi</Nav.Link>
-          <Nav.Link href="https://unixmib.github.io/mercatino/">Mercatino</Nav.Link>
+          <Nav.Link href="https://unixmib.github.io/mercatino/">
+            Mercatino
+          </Nav.Link>
           <Nav.Link href="#contattaci">Come contattarci</Nav.Link>
         </Nav>
       </Navbar.Collapse>

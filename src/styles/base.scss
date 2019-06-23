@@ -1,6 +1,6 @@
 body {
-	background-color: $white;
-	color: $black;
+  background-color: $white;
+  color: $black;
 }
 
 html {
@@ -8,12 +8,12 @@ html {
 }
 
 a.anchor {
-	display: block;
-	position: relative;
-	top: -5.9rem;
-	visibility: hidden;
+  display: block;
+  position: relative;
+  top: -5.9rem;
+  visibility: hidden;
 
-	@media (max-width: 768px){
-		top: -11rem;
-	}
+  @media (max-width: 768px) {
+    top: -11rem;
+  }
 }

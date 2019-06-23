@@ -16,14 +16,21 @@
 							"message": 3
 						}
 					]
-				}, "$node-sass"
-			],
-			
+				},
+				"$node-sass"
+			]
 		},
 		{
 			"type": "npm",
 			"script": "develop",
 			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "format",
+			"problemMatcher": [
+				"$node-sass"
+			]
 		}
 	]
 }

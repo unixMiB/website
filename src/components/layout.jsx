@@ -31,6 +31,7 @@ const Layout = ({ children }) => (
               name: 'description',
               content: data.site.siteMetadata.description,
             },
+            { name: 'application-name', content: data.site.siteMetadata.title },
             { name: 'author', content: data.site.siteMetadata.author },
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
