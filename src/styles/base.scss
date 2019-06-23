@@ -10,6 +10,10 @@ html {
 a.anchor {
 	display: block;
 	position: relative;
-	top: -6rem;
+	top: -5.9rem;
 	visibility: hidden;
+
+	@media (max-width: 768px){
+		top: -11rem;
+	}
 }

@@ -5,7 +5,7 @@ import CombinationMark from '../assets/combination_mark.svg'
 const Header = ({ siteData }) => (
   <header>
     <Navbar
-      className="navbar"
+      //className="navbar"
       collapseOnSelect
       expand="lg"
       variant={siteData.navbarVariant}
@@ -13,7 +13,7 @@ const Header = ({ siteData }) => (
         backgroundColor: siteData.theme
       }}
     >
-      <Navbar.Brand href="/"><CombinationMark /></Navbar.Brand>
+      <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/"><CombinationMark /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
         <Nav>
