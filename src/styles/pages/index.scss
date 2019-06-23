@@ -4,7 +4,7 @@
 		@include cover-background('../assets/hero.jpg', true);
 
 		padding: 2.5rem;
-		margin-top: 3.1rem;
+		margin-top: 4.1rem;
 
 		@media (max-width: 768px){
 			margin-top: 0;
@@ -61,6 +61,7 @@
 				display: inline-block;
 				font-weight: 500;
 				color: $accent;
+				font-size: 1.5rem;
 				line-height: 1.3rem;
 			}
 		}

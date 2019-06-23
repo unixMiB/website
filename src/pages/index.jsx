@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout>
     <main id="page-home">
       <div class="center" id="hero">
-        <h1 class="title">unix<span>MiB</span></h1>
+        {/* <h1 class="title">unix<span>MiB</span></h1> */}
         <Logo class="eh10" alt="unixMiB logo (a penguin)" />
         <h2 class="subtitle normal-text ">Gruppo Utenti <span class="tinted">Linux</span></h2>
         <h2 class="subtitle normal-text">Università Milano <span class="tinted">Bicocca</span></h2>

@@ -1,12 +1,12 @@
-@for $i from 1 through 20 {
+@for $i from 1 through 25 {
   .vh#{5*$i} { height: 5vh * $i; }
 }
 
-@for $i from 1 through 20 {
+@for $i from 1 through 25 {
   .h#{5*$i} { height: 5% * $i; }
 }
 
-@for $i from 1 through 20 {
+@for $i from 1 through 25 {
   .eh#{5*$i} { height: 5em * $i; }
 }
 
