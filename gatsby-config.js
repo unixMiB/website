@@ -3,8 +3,8 @@ module.exports = {
     title: 'unixMiB',
     description: 'Gruppo Utenti Linux, Università Milano Bicocca',
     keywords: 'unixMiB, Linux, Bicocca, Università, LUG, Open Source',
-    author:
-      'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
+    author: 'unixMiB', // Fix for some sites
+    //'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
     theme: '#ffffff',
     navbarVariant: 'light',
     siteUrl: 'https://gatsby-starter-kowalski7cc.netlify.com/',
