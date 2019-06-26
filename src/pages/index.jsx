@@ -77,7 +77,7 @@ const IndexPage = () => (
             </a>
           </div>
           <div class="col">
-            <a href="https://unixmib.github.io/mercatino/" target="_blank">
+            <a href="/mercatino/">
               <FontAwesomeIcon class="faicon" icon="shopping-bag" />
               <b>Mercatino</b>
             </a>
