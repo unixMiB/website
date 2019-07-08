@@ -24,6 +24,7 @@ const Header = ({ siteData }) => (
         <Nav>
           <Nav.Link href="#chi-siamo">Chi siamo</Nav.Link>
           <Nav.Link href="#obiettivi">I nostri obiettivi</Nav.Link>
+          <Nav.Link href="/eventi/">Eventi</Nav.Link>
           <Nav.Link href="/mercatino/">Mercatino</Nav.Link>
           <Nav.Link href="#contattaci">Come contattarci</Nav.Link>
         </Nav>
