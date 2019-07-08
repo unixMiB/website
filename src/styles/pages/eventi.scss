@@ -48,6 +48,8 @@
       .image {
         visibility: hidden;
       }
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
       .text {
         padding-left: 2.5rem;
         padding-right: 2rem;
@@ -58,6 +60,13 @@
       .image {
         padding-left: 3rem;
       }
+      .text {
+        padding-right: 2.5rem;
+      }
+    }
+
+    .text {
+      padding-right: 4rem;
     }
 
     $text-padding: 28rem;
@@ -155,14 +164,15 @@
       color: $accent;
 
       .image {
-        padding-left: 5rem;
+        padding-left: 4rem;
         padding-top: 0rem;
       }
 
       @include media-breakpoint-up(md) {
+        padding-top: 1rem;
         .text {
           padding-top: 4rem;
-          padding-bottom: 7rem;
+          padding-bottom: 4rem;
           padding-left: $text-padding;
           padding-top: 1rem;
         }
