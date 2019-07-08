@@ -169,7 +169,12 @@
       background-size: 100%;
 
       background-repeat: no-repeat;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
+        background-size: cover;
+        background-position-x: 35%;
+      }
+
+      @include media-breakpoint-up(xl) {
         background-size: cover;
       }
 
