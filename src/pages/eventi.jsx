@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Row, Button } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import Ldmi from '../assets/ldmi.svg'
 import Akademy from '../assets/akademy.svg'
 import Extraordy from '../assets/extraordy.svg'

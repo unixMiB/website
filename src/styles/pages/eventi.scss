@@ -2,8 +2,7 @@
   #hero {
     @include cover-background('../assets/hero.jpg', true);
 
-    
-    @include media-breakpoint-up(sm){
+    @include media-breakpoint-up(sm) {
       padding-left: 5rem;
     }
     padding-left: 2rem;
@@ -41,7 +40,7 @@
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 
-    @include media-breakpoint-up(sm){
+    @include media-breakpoint-up(sm) {
       padding-left: 2.5rem;
     }
 
@@ -82,7 +81,6 @@
 
       background: $background;
       color: $accent;
-
 
       .image {
         padding-left: 6rem;
@@ -133,7 +131,6 @@
 
       background: $background;
       color: $accent;
-
 
       .image {
         padding-left: 5rem;
