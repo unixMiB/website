@@ -1,0 +1,185 @@
+#page-eventi {
+  #hero {
+    @include cover-background('../assets/hero.jpg', true);
+
+    
+    @include media-breakpoint-up(sm){
+      padding-left: 5rem;
+    }
+    padding-left: 2rem;
+    padding: 2.5rem;
+    margin-top: 3.9rem;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+
+    .title {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: normal;
+      font-family: 'Noto Serif', serif;
+
+      @include tshadow;
+      span {
+        color: $accent;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
+      }
+    }
+
+    .subtitle {
+      @include tshadow;
+      color: white;
+    }
+  }
+
+  section {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-up(sm){
+      padding-left: 2.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      .image {
+        visibility: hidden;
+      }
+      .text {
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+      }
+    }
+
+    @include media-breakpoint-only(md) {
+      .image {
+        padding-left: 3rem;
+      }
+    }
+
+    $text-padding: 28rem;
+
+    .faicon {
+      width: 1.125em;
+    }
+
+    .front {
+      z-index: 2;
+    }
+
+    .image {
+      position: absolute;
+      z-index: 0;
+    }
+
+    &#ldmi {
+      $accent: #424242;
+      $background: #ffb600;
+
+      background: $background;
+      color: $accent;
+
+
+      .image {
+        padding-left: 6rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+        .text {
+          padding-left: $text-padding;
+          padding-right: 2rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+
+    &#akademy {
+      $background: #aaccee;
+      $accent: #204a86;
+
+      @include media-breakpoint-up(md) {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+      }
+
+      .image {
+        padding-left: 5rem;
+        padding-top: 1rem;
+      }
+
+      .text {
+        @include media-breakpoint-up(md) {
+          padding-left: $text-padding;
+        }
+        padding-top: 0rem;
+      }
+
+      background: $background;
+      color: $accent;
+    }
+
+    &#rhel {
+      $background: #810000;
+      // $accent: white;
+      // $background: white;
+      // $accent: #CB0000;
+      $accent: black;
+
+      background: $background;
+      color: $accent;
+
+
+      .image {
+        padding-left: 5rem;
+        padding-top: 0rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        .text {
+          padding-left: $text-padding;
+          padding-top: 1rem;
+        }
+      }
+    }
+
+    &#tgif {
+      $background: #006879;
+      $accent: white;
+
+      background: $background;
+      color: $accent;
+
+      .image {
+        padding-left: 5rem;
+        padding-top: 0rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        .text {
+          padding-top: 4rem;
+          padding-bottom: 7rem;
+          padding-left: $text-padding;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    color: white;
+    background-color: #212121;
+    text-align: center;
+    padding: 2rem 2.5rem 2rem;
+    span {
+      color: $accent;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { Jumbotron, Button, Container } from 'react-bootstrap'
 
 const Mercatino = () => (
   <Layout>
-    <main id="mercatino-home">
+    <main id="page-mercatino">
       <div id="hero">
         <Container id="jumbotron-container">
           <Jumbotron id="jumbotron">

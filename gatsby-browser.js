@@ -14,6 +14,25 @@ import {
   faWrench,
   faBullhorn,
   faShoppingBag,
+  faCalendar,
+  faClock,
+  faMapMarkedAlt,
+  faGlobe,
+  faEnvelope,
+  faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab, faUsers, faFlag, faWrench, faBullhorn, faShoppingBag)
+library.add(
+  fab,
+  faUsers,
+  faFlag,
+  faWrench,
+  faBullhorn,
+  faShoppingBag,
+  faCalendar,
+  faClock,
+  faMapMarkedAlt,
+  faGlobe,
+  faEnvelope,
+  faChevronRight,
+)
