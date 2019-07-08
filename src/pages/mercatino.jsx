@@ -23,7 +23,7 @@ const Mercatino = () => (
               <div class="center">
                 <Button
                   className="button"
-                  variant="primary"
+                  variant="success"
                   href="https://t.me/unixmib_mercatino_bot"
                 >
                   Apri la chat

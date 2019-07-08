@@ -20,6 +20,7 @@ import {
   faGlobe,
   faEnvelope,
   faChevronRight,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(
@@ -35,4 +36,5 @@ library.add(
   faGlobe,
   faEnvelope,
   faChevronRight,
+  faHome
 )

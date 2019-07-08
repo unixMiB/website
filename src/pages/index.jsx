@@ -18,7 +18,10 @@ const IndexPage = () => (
       </div>
 
       <section id="chiSiamo" class="center">
-        <a class="anchor" id="chi-siamo"></a>
+        {
+          // eslint-disable-next-line
+          <a class="anchor" aria-hidden="true" id="chi-siamo" />
+        }
         <h2>Chi Siamo</h2>
         <FontAwesomeIcon class="faicon" icon="users" />
         <div class="desc">
@@ -32,7 +35,10 @@ const IndexPage = () => (
       <div class="img eh15" id="foto1"></div>
 
       <section id="cosaFacciamo" class="center">
-        <a class="anchor" id="obiettivi"></a>
+        {
+          // eslint-disable-next-line
+          <a class="anchor" aria-hidden="true" id="obiettivi" />
+        }
         <h2>I nostri obiettivi</h2>
         <div class="row">
           <div class="col">
@@ -61,17 +67,20 @@ const IndexPage = () => (
       <div class="img eh15" id="foto2"></div>
 
       <section id="comeContattarci" class="center">
-        <a class="anchor" id="contattaci"></a>
+        {
+          // eslint-disable-next-line
+          <a class="anchor" aria-hidden="true" id="contattaci" />
+        }
         <h2>Come contattarci</h2>
         <div class="row">
           <div class="col">
-            <a href="https://telegram.me/unixmib/" target="_blank">
+            <a href="https://telegram.me/unixmib/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon class="faicon" icon={['fab', 'telegram']} />
               <b>Gruppo Telegram</b>
             </a>
           </div>
           <div class="col">
-            <a href="https://telegram.me/unixmibinfo/" target="_blank">
+            <a href="https://telegram.me/unixmibinfo/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon class="faicon" icon="bullhorn" />
               <b>Canale Telegram</b>
             </a>
@@ -83,7 +92,7 @@ const IndexPage = () => (
             </a>
           </div>
           <div class="col">
-            <a href="https://www.facebook.com/unixmib/" target="_blank">
+            <a href="https://www.facebook.com/unixmib/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon
                 class="faicon"
                 icon={['fab', 'facebook-square']}
@@ -92,7 +101,7 @@ const IndexPage = () => (
             </a>
           </div>
           <div class="col">
-            <a href="https://github.com/unixmib/" target="_blank">
+            <a href="https://github.com/unixmib/" rel="noopener noreferrer" target="_blank">
               <FontAwesomeIcon class="faicon" icon={['fab', 'github']} />
               <b>Github</b>
             </a>
