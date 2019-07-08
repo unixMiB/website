@@ -1,17 +1,19 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Row } from 'react-bootstrap'
-import Ldmi from '../assets/ldmi.svg'
-import Akademy from '../assets/akademy.svg'
-import Extraordy from '../assets/extraordy.svg'
-import Tgif from '../assets/tgif.svg'
+import Ldmi from '../assets/events/logos/ldmi.svg'
+import Akademy from '../assets/events/logos/akademy.svg'
+import Extraordy from '../assets/events/logos/extraordy.svg'
+import Tgif from '../assets/events/logos/tgif.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Mercatino = () => (
   <Layout>
     <main id="page-eventi">
       <div id="hero">
-        <h2 class="title">I nostri eventi</h2>
+        <h2 class="title">
+          I nostri <span>eventi</span>
+        </h2>
       </div>
       <section id="ldmi">
         <Row>
@@ -68,7 +70,7 @@ const Mercatino = () => (
             <Tgif />
           </div>
           <div class="text front">
-            <h2>Thank got it's friday</h2>
+            <h2>Thank god it's friday</h2>
             <FontAwesomeIcon icon="map-marked-alt" /> Università Milano Bicocca
             <br />
             <FontAwesomeIcon icon="chevron-right" /> Edificio U24
@@ -89,10 +91,14 @@ const Mercatino = () => (
           </div>
         </Row>
       </section>
+      <div id="picture4" class="img eh20" />
+      <div id="picture1" class="img eh20" />
+      <div id="picture2" class="img eh20" />
+      <div id="picture3" class="img eh20" />
       <footer>
         E molto altro ancora prossimamente. Rimani aggiornato su{' '}
-        <a href="fb.me/unixmib">Facebook</a> e su{' '}
-        <a href="t.me/unixmibinfo">Telegram</a> per non perderti nulla!
+        <a href="https://fb.me/unixmib">Facebook</a> e su{' '}
+        <a href="https://t.me/unixmibinfo">Telegram</a> per non perderti nulla!
       </footer>
     </main>
   </Layout>

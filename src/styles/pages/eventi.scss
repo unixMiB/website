@@ -9,21 +9,17 @@
     padding: 2.5rem;
     margin-top: 3.9rem;
 
-    @media (max-width: 768px) {
+    @include media-breakpoint-down(sm) {
       margin-top: 0;
     }
 
     .title {
       color: white;
       font-size: 2.5rem;
-      font-weight: normal;
-      font-family: 'Noto Serif', serif;
 
       @include tshadow;
       span {
         color: $accent;
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: bold;
       }
     }
 
@@ -37,7 +33,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    padding-top: 0.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 1rem;
 
     @include media-breakpoint-up(sm) {
@@ -96,12 +92,11 @@
       }
 
       @include media-breakpoint-up(md) {
-        padding-top: 3rem;
         padding-bottom: 6rem;
         .text {
           padding-left: $text-padding;
           padding-right: 2rem;
-          padding-top: 1rem;
+          // padding-top: 1rem;
         }
       }
     }
@@ -111,20 +106,17 @@
       $accent: #204a86;
 
       @include media-breakpoint-up(md) {
-        padding-top: 4rem;
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
       }
 
       .image {
         padding-left: 5rem;
-        padding-top: 1rem;
       }
 
       .text {
         @include media-breakpoint-up(md) {
           padding-left: $text-padding;
         }
-        padding-top: 0rem;
       }
 
       background: $background;
@@ -132,10 +124,9 @@
     }
 
     &#rhel {
-      $background: #810000;
-      // $accent: white;
-      // $background: white;
-      // $accent: #CB0000;
+      // dark red: #810000;
+      // light red: #CB0000;
+      $background: #cb0000;
       $accent: black;
 
       background: $background;
@@ -143,15 +134,12 @@
 
       .image {
         padding-left: 5rem;
-        padding-top: 0rem;
       }
 
       @include media-breakpoint-up(md) {
-        padding-top: 4rem;
-        padding-bottom: 6rem;
+        padding-bottom: 7rem;
         .text {
           padding-left: $text-padding;
-          padding-top: 1rem;
         }
       }
     }
@@ -164,18 +152,40 @@
       color: $accent;
 
       .image {
-        padding-left: 4rem;
-        padding-top: 0rem;
+        padding-left: 4.5rem;
       }
 
       @include media-breakpoint-up(md) {
-        padding-top: 1rem;
         .text {
-          padding-top: 4rem;
           padding-bottom: 4rem;
           padding-left: $text-padding;
-          padding-top: 1rem;
         }
+      }
+    }
+  }
+
+  div {
+    &.img {
+      background-size: 100%;
+
+      background-repeat: no-repeat;
+      @include media-breakpoint-down(md) {
+        background-size: cover;
+      }
+
+      &#picture1 {
+        background-image: url('../assets/events/pictures/picture1.jpg');
+      }
+      &#picture2 {
+        background-image: url('../assets/events/pictures/picture2.jpg')
+      }
+      &#picture3 {
+        background-image: url('../assets/events/pictures/picture3.jpg');
+        background-position-y: 15%;
+      }
+      &#picture4 {
+       background-image: url('../assets/events/pictures/picture4.jpg');
+       background-position-y: 50%;
       }
     }
   }
