@@ -82,6 +82,9 @@ const Mercatino = () => (
             <FontAwesomeIcon class="faicon" icon={['fab', 'telegram']} />{' '}
             t.me/unixmibinfo
             <br />
+            <FontAwesomeIcon class="faicon" icon={['fab', 'github']} />{' '}
+            github.com/unixmib
+            <br />
             <FontAwesomeIcon icon="map-marked-alt" /> Università Milano Bicocca
           </div>
         </Row>
