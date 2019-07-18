@@ -36,6 +36,10 @@
     padding-top: 2.5rem;
     padding-bottom: 1rem;
 
+    .image {
+      width: 23em;
+    }
+
     @include media-breakpoint-up(sm) {
       padding-left: 2.5rem;
     }

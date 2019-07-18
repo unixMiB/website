@@ -5,7 +5,7 @@ import CombinationMark from '../assets/combination_mark.svg'
 const Header = ({ siteData }) => (
   <header>
     <Navbar
-      //className="navbar"
+      id="navbar"
       collapseOnSelect
       expand="lg"
       variant={siteData.navbarVariant}
@@ -22,11 +22,11 @@ const Header = ({ siteData }) => (
         className="justify-content-end"
       >
         <Nav>
-          <Nav.Link href="/#chi-siamo">Chi siamo</Nav.Link>
-          <Nav.Link href="/#obiettivi">I nostri obiettivi</Nav.Link>
-          <Nav.Link href="/eventi">Eventi</Nav.Link>
-          <Nav.Link href="/mercatino">Mercatino</Nav.Link>
-          <Nav.Link href="/#contattaci">Come contattarci</Nav.Link>
+          <Nav.Link className="link" href="/#chi-siamo">Chi siamo</Nav.Link>
+          <Nav.Link className="link" href="/#obiettivi">I nostri obiettivi</Nav.Link>
+          <Nav.Link className="link" href="/eventi">Eventi</Nav.Link>
+          <Nav.Link className="link" href="/mercatino">Mercatino</Nav.Link>
+          <Nav.Link className="link" href="/#contattaci">Come contattarci</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
