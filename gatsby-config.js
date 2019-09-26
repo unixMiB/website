@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: 'unixMiB',
@@ -11,6 +13,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-dark-mode',
+    'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: 'gatsby-plugin-brotli',
       options: {
@@ -24,6 +28,10 @@ module.exports = {
         name: 'unixMiB',
         short_name: 'unixMiB',
         start_url: '/',
+        lang: 'it',
+        icon_options: {
+          purpose: 'maskable',
+        },
         description: 'Gruppo Utenti Linux, Università Milano Bicocca',
         background_color: '#fffffa',
         theme_color: '#343a40',
@@ -31,36 +39,36 @@ module.exports = {
         icon: './src/assets/favicon.png',
       },
     },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        appName: 'unixMiB',
-        appDescription: 'Gruppo Utenti Linux, Università Milano Bicocca',
-        developerName: 'Kowalski7cc',
-        developerURL: 'https://kowalski7cc.xyz',
-        dir: 'auto',
-        lang: 'it-IT',
-        background: '#fffffa',
-        theme_color: '#343a40',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/',
-        version: '1.0',
-        logo: './src/assets/favicon.png',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: true,
-          favicons: true,
-          firefox: true,
-          opengraph: true,
-          twitter: true,
-          yandex: true,
-          windows: true,
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-favicon',
+    //   options: {
+    //     appName: 'unixMiB',
+    //     appDescription: 'Gruppo Utenti Linux, Università Milano Bicocca',
+    //     developerName: 'Kowalski7cc',
+    //     developerURL: 'https://kowalski7cc.xyz',
+    //     dir: 'auto',
+    //     lang: 'it-IT',
+    //     background: '#fffffa',
+    //     theme_color: '#343a40',
+    //     display: 'standalone',
+    //     orientation: 'any',
+    //     start_url: '/',
+    //     version: '1.0',
+    //     logo: './src/assets/favicon.png',
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: true,
+    //       favicons: true,
+    //       firefox: true,
+    //       opengraph: true,
+    //       twitter: true,
+    //       yandex: true,
+    //       windows: true,
+    //     },
+    //   },
+    // },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-robots-txt',
@@ -89,6 +97,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'attachments',
+            },
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 600,
@@ -101,6 +115,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-image',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-netlify',

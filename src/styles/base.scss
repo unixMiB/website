@@ -23,3 +23,16 @@ a.anchor {
     top: -11rem;
   }
 }
+
+a {
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--blue);
+    
+    b {
+      text-decoration: underline;
+    }
+  }
+}

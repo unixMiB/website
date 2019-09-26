@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
 
-  @media (max-width: 768px) {
+  @include media-breakpoint-down(sm) {
     position: static;
   }
 

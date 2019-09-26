@@ -1,211 +1,51 @@
 #page-eventi {
-  #hero {
-    @include cover-background('../assets/hero.jpg', true);
+  section#eventi {
+    div {
+      &.ldmi {
+        background: #ffb600;
+        color: black;
+      }
 
-    @include media-breakpoint-up(sm) {
-      padding-left: 5rem;
-    }
-    padding-left: 2rem;
-    padding: 2.5rem;
-    margin-top: 3.9rem;
+      &.akademy {
+        background: #aaccee;
+        color: black;
+      }
 
-    @include media-breakpoint-down(sm) {
-      margin-top: 0;
-    }
+      &.rhel {
+        background: #cb0000;
+        color: black;
+      }
 
-    .title {
-      color: white;
-      font-size: 2.5rem;
-
-      @include tshadow;
-      span {
-        color: $accent;
+      &.tgif {
+        background: #006879;
+        color: white;
       }
     }
 
-    .subtitle {
-      @include tshadow;
-      color: white;
-    }
-  }
-
-  section {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
-
-    .image {
-      width: 23em;
-    }
-
-    @include media-breakpoint-up(sm) {
-      padding-left: 2.5rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-      .image {
-        visibility: hidden;
-      }
-      padding-top: 1rem;
-      padding-bottom: 1.5rem;
+    .row {
+      padding: 3rem 0 3rem 0;
       .text {
-        padding-left: 2.5rem;
-        padding-right: 2rem;
-      }
-    }
-
-    @include media-breakpoint-only(md) {
-      .image {
-        padding-left: 3rem;
-      }
-      .text {
-        padding-right: 2.5rem;
-      }
-    }
-
-    .text {
-      padding-right: 4rem;
-    }
-
-    $text-padding: 28rem;
-
-    .faicon {
-      width: 1.125em;
-    }
-
-    .front {
-      z-index: 2;
-    }
-
-    .image {
-      position: absolute;
-      z-index: 0;
-    }
-
-    &#ldmi {
-      $accent: #424242;
-      $background: #ffb600;
-
-      background: $background;
-      color: $accent;
-
-      .image {
-        padding-left: 6rem;
-      }
-
-      @include media-breakpoint-up(md) {
-        padding-bottom: 6rem;
-        .text {
-          padding-left: $text-padding;
-          padding-right: 2rem;
-          // padding-top: 1rem;
+        h2 {
+          padding-bottom: 1rem;
         }
-      }
-    }
-
-    &#akademy {
-      $background: #aaccee;
-      $accent: #204a86;
-
-      @include media-breakpoint-up(md) {
-        padding-bottom: 4rem;
-      }
-
-      .image {
-        padding-left: 5rem;
-      }
-
-      .text {
-        @include media-breakpoint-up(md) {
-          padding-left: $text-padding;
-        }
-      }
-
-      background: $background;
-      color: $accent;
-    }
-
-    &#rhel {
-      // dark red: #810000;
-      // light red: #CB0000;
-      $background: #cb0000;
-      $accent: black;
-
-      background: $background;
-      color: $accent;
-
-      .image {
-        padding-left: 5rem;
-      }
-
-      @include media-breakpoint-up(md) {
-        padding-bottom: 7rem;
-        .text {
-          padding-left: $text-padding;
-        }
-      }
-    }
-
-    &#tgif {
-      $background: #006879;
-      $accent: white;
-
-      background: $background;
-      color: $accent;
-
-      .image {
-        padding-left: 4.5rem;
-      }
-
-      @include media-breakpoint-up(md) {
-        .text {
-          padding-bottom: 5rem;
-          padding-left: $text-padding;
-        }
+        text-align: left;
+        h2 {
+          line-height: 2rem
+        };
       }
     }
   }
+}
 
-  div {
-    &.img {
-      background-size: 100%;
-
-      background-repeat: no-repeat;
-      @include media-breakpoint-down(sm) {
-        background-size: cover;
-        background-position-x: 35%;
-      }
-
-      @include media-breakpoint-up(xl) {
-        background-size: cover;
-      }
-
-      &#picture1 {
-        background-image: url('../assets/events/pictures/picture1.jpg');
-      }
-      &#picture2 {
-        background-image: url('../assets/events/pictures/picture2.jpg');
-      }
-      &#picture3 {
-        background-image: url('../assets/events/pictures/picture3.jpg');
-        background-position-y: 15%;
-      }
-      &#picture4 {
-        background-image: url('../assets/events/pictures/picture4.jpg');
-        background-position-y: 50%;
-      }
-    }
-  }
-
-  footer {
-    color: white;
-    background-color: #212121;
-    text-align: center;
-    padding: 2rem 2.5rem 2rem;
-    span {
-      color: $accent;
+.events-footer {
+  color: white;
+  background-color: #212121;
+  text-align: center;
+  padding: 2rem 2.5rem 2rem;
+  span, a:link, a:visited {
+    color: $accent;
+    &:hover {
+      color: var(--blue);
     }
   }
 }
