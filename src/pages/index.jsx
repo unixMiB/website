@@ -28,10 +28,10 @@ const IndexPage = () => (
           <h2>Chi Siamo</h2>
           <FontAwesomeIcon class="faicon" icon="users" />
           <div class="desc">
-            <span class="hl">unixMiB</span> nasce nell'Ottobre 2015 per opera di
+          unix<span class="h2">MiB</span> nasce nell'Ottobre 2015 per opera di
             alcuni studenti della <span class="h2">Bicocca</span> appassionati
             di <span class="h2">Open Source</span> e di{' '}
-            <span class="hl">Linux</span>.
+            <span class="h2">Linux</span>.
           </div>
         </Container>
       </section>
