@@ -4,21 +4,53 @@
       &.ldmi {
         background: #ffb600;
         color: black;
+
+        a:link,
+        a:visited {
+          color: black;
+          &:hover {
+            color: var(--cyan);
+          }
+        }
       }
 
       &.akademy {
         background: #aaccee;
         color: black;
+
+        a:link,
+        a:visited {
+          color: black;
+          &:hover {
+            color: var(--cyan);
+          }
+        }
       }
 
       &.rhel {
         background: #cb0000;
         color: black;
+
+        a:link,
+        a:visited {
+          color: black;
+          &:hover {
+            color: var(--cyan);
+          }
+        }
       }
 
       &.tgif {
         background: #006879;
         color: white;
+
+        a:link,
+        a:visited {
+          color: white;
+          &:hover {
+            color: var(--cyan);
+          }
+        }
       }
     }
 
@@ -30,8 +62,8 @@
         }
         text-align: left;
         h2 {
-          line-height: 2rem
-        };
+          line-height: 2rem;
+        }
       }
     }
   }
@@ -42,10 +74,12 @@
   background-color: #212121;
   text-align: center;
   padding: 2rem 2.5rem 2rem;
-  span, a:link, a:visited {
+  span,
+  a:link,
+  a:visited {
     color: $accent;
     &:hover {
-      color: var(--blue);
+      color: var(--cyan);
     }
   }
 }

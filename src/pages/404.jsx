@@ -1,19 +1,30 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Button } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NotFoundPage = () => (
   <Layout>
-    <main id="page-404">
-      <div class="bg" />
-      <div class="text">
-        <h1>Pagina non trovata</h1>
-        <p>La pagina che stai cercando non esiste.</p>
-        <Button variant="success" href="/">
-          <FontAwesomeIcon icon="home" /> Homepage
-        </Button>
+    <main class="page" id="page-404">
+      <div id="hero">
+        <h2 class="title">
+          Pagina non <span>trovata</span>
+        </h2>
       </div>
+
+      <section>
+        <Container>
+          <div class="center">
+            <h2>La pagina che stai cercando non esiste</h2>
+            <br />
+            <FontAwesomeIcon class="faicon" icon="sad-tear" />
+            <br />
+            <Button variant="success" href="/">
+              <FontAwesomeIcon icon="home" /> Homepage
+            </Button>
+          </div>
+        </Container>
+      </section>
     </main>
   </Layout>
 )

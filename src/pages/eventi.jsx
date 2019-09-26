@@ -21,7 +21,7 @@ const Mercatino = () => (
           <Container>
             <Row>
               <Col md={4} sm={3} className="d-none d-md-block d-xl-block">
-                <Ldmi/>
+                <Ldmi />
               </Col>
               <Col md={8} sm={9}>
                 <div class="text">
@@ -31,12 +31,13 @@ const Mercatino = () => (
                     <br />
                     <FontAwesomeIcon icon="clock" /> Ore 9:30
                     <br />
-                    <FontAwesomeIcon icon="globe" /> linuxdaymilano.org
-                    <br />
                     <FontAwesomeIcon icon="map-marked-alt" /> Università Milano
                     Bicocca
                     <br />
                     <FontAwesomeIcon icon="chevron-right" /> Edificio U7
+                    <br />
+                    <FontAwesomeIcon icon="globe" />{' '}
+                    <a href="https://linuxdaymilano.org">linuxdaymilano.org</a>
                   </p>
                 </div>
               </Col>
@@ -59,7 +60,11 @@ const Mercatino = () => (
                     <FontAwesomeIcon icon="map-marked-alt" /> Università Milano
                     Bicocca
                     <br />
-                    <FontAwesomeIcon icon="globe" /> akademy.kde.org
+                    <FontAwesomeIcon icon="chevron-right" /> Edifici U1, U2, U3
+                    e U4
+                    <br />
+                    <FontAwesomeIcon icon="globe" />{' '}
+                    <a href="https://akademy.kde.org/">akademy.kde.org</a>
                   </p>
                 </div>
               </Col>
@@ -84,6 +89,14 @@ const Mercatino = () => (
                     Bicocca
                     <br />
                     <FontAwesomeIcon icon="chevron-right" /> Edificio U24
+                    <br />
+                    <FontAwesomeIcon
+                      style={{ width: '1.125em' }}
+                      icon={['fab', 'github-alt']}
+                    />{' '}
+                    <a href="https://github.com/unixMiB/events/tree/master/Red%20Hat%20System%20Administration">
+                      github.com/unixmib/events
+                    </a>
                   </p>
                 </div>
               </Col>
@@ -107,25 +120,12 @@ const Mercatino = () => (
                     <FontAwesomeIcon icon="chevron-right" /> Edificio U24
                     <br />
                     <FontAwesomeIcon
-                      style={{width: '1.125em'}}
-                      icon={['fab', 'facebook-f']}
-                    />{' '}
-                    fb.me/unixmib
-                    <br />
-                    <FontAwesomeIcon
-                      style={{width: '1.125em'}}
-                      icon={['fab', 'telegram-plane']}
-                    />{' '}
-                    t.me/unixmibinfo
-                    <br />
-                    <FontAwesomeIcon
-                      style={{width: '1.125em'}}
+                      style={{ width: '1.125em' }}
                       icon={['fab', 'github-alt']}
                     />{' '}
-                    github.com/unixmib
-                    <br />
-                    <FontAwesomeIcon icon="map-marked-alt" /> Università Milano
-                    Bicocca
+                    <a href="https://github.com/unixMiB/events/tree/master/Thank%20God%20Its%20Friday">
+                      github.com/unixmib/events
+                    </a>
                   </p>
                 </div>
               </Col>
@@ -139,8 +139,14 @@ const Mercatino = () => (
       <div id="picture3" class="img eh20" /> */}
       <div className="events-footer">
         E molto altro ancora prossimamente. Rimani aggiornato su{' '}
-        <a href="https://fb.me/unixmib"><b>Facebook</b></a> e su{' '}
-        <a href="https://t.me/unixmibinfo"><b>Telegram</b></a> per non perderti nulla!
+        <a href="https://fb.me/unixmib">
+          <b>Facebook</b>
+        </a>{' '}
+        e su{' '}
+        <a href="https://t.me/unixmibinfo">
+          <b>Telegram</b>
+        </a>{' '}
+        per non perderti nulla!
       </div>
     </main>
   </Layout>
