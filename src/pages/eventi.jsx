@@ -52,7 +52,7 @@ const Mercatino = () => (
               </Col>
               <Col md={8} sm={9}>
                 <div class="text">
-                  <h2>Linux Day Milano 2019</h2>
+                  <h2>Akademy</h2>
                   <p>
                     <FontAwesomeIcon icon="calendar" /> Dal 7 al 13 Settembre
                     2019
