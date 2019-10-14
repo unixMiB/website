@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import CombinationMark from '../assets/combination_mark.svg'
+import CombinationMarkLight from '../assets/combination_mark.svg'
+import CombinationMarkDark from '../assets/combination_mark_dark.svg'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Header = ({ siteData }) => (
   <header>
@@ -15,7 +17,13 @@ const Header = ({ siteData }) => (
     >
       <Container>
         <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/">
-          <CombinationMark />
+        <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <>
+            {theme==='dark'?<CombinationMarkDark/>:<CombinationMarkLight/>}
+          </>
+        )}
+        </ThemeToggler>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse

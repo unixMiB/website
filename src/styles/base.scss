@@ -35,6 +35,26 @@ a.anchor {
   }
 }
 
+.dark {
+  background-color: $gray-900;
+  color: $gray-100;
+
+  a {
+    color: $gray-100;
+  }
+
+  footer {
+    background-color: black;
+  }
+
+  #navbar {
+    background-color: $gray-900 !important;
+    .link {
+      color: $gray-200;
+    }
+  }
+}
+
 a {
   color: $black;
 
