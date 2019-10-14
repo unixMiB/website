@@ -41,7 +41,8 @@ const Layout = ({ children }) => (
         <Header siteData={data.site.siteMetadata} />
         {children}
         <footer>
-          Copyright unix<span>MiB</span> 2019 - Creative Commons Attribution-ShareAlike <span>4.0</span> International
+          Copyright unix<span>MiB</span> 2019 - Creative Commons
+          Attribution-ShareAlike <span>4.0</span> International
         </footer>
       </>
     )}
