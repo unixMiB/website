@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Jumbotron, Button, Container, Row, Col } from 'react-bootstrap'
+import { Button, Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Mercatino = () => (

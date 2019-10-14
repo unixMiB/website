@@ -40,6 +40,9 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteData={data.site.siteMetadata} />
         {children}
+        <footer>
+          Copyright unix<span>MiB</span> 2019 - Creative Commons Attribution-ShareAlike <span>4.0</span> International
+        </footer>
       </>
     )}
   />
