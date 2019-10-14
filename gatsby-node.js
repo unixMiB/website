@@ -11,6 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
     fromPath: 'https://unixmub.netlify.com/*',
     toPath: 'https://unixmib.org/:splat',
     isPermanent: true,
+    redirectInBrowser: true,
     force: true,
   })
 }
