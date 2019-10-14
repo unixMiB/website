@@ -3,13 +3,13 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'unixMiB',
-    description: 'Gruppo Utenti Linux, Università Milano Bicocca',
+    description: 'Linux User Group, Università Milano Bicocca',
     keywords: 'unixMiB, Linux, Bicocca, Università, LUG, Open Source',
     author: 'unixMiB', // Fix for some sites
     //'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
     theme: '#ffffff',
     navbarVariant: 'light',
-    siteUrl: 'https://gatsby-starter-kowalski7cc.netlify.com/',
+    siteUrl: 'https://unixmib.com/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -32,7 +32,7 @@ module.exports = {
         icon_options: {
           purpose: 'maskable',
         },
-        description: 'Gruppo Utenti Linux, Università Milano Bicocca',
+        description: 'Linux User Group, Università Milano Bicocca',
         background_color: '#fffffa',
         theme_color: '#343a40',
         display: 'standalone',
@@ -105,7 +105,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 600,
+              maxWidth: 1000,
               linkImagesToOriginal: true,
               sizeByPixelDensity: true,
               quality: 70,
