@@ -46,7 +46,8 @@ const Mercatino = () => (
               <h3 class="title">Cosa posso vendere</h3>
               <div class="desc">
                 <p>
-                  Nel mercatino sono ammesse tutte le inserzioni pertinenti al mondo della tecnologia
+                  Nel mercatino sono ammesse tutte le inserzioni pertinenti al
+                  mondo della tecnologia
                 </p>
               </div>
               <Button
