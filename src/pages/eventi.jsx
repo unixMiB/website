@@ -11,7 +11,7 @@ const Mercatino = () => (
   <Layout>
     <main className="page" id="page-eventi">
       <div id="hero">
-        <h2 class="title">
+        <h2 className="title">
           I nostri <span>eventi</span>
         </h2>
       </div>
@@ -24,7 +24,7 @@ const Mercatino = () => (
                 <Ldmi />
               </Col>
               <Col md={8} sm={9}>
-                <div class="text">
+                <div className="text">
                   <h2>Linux Day Milano 2019</h2>
                   <p>
                     <FontAwesomeIcon icon="calendar" /> Sabato 26 Ottobre 2019
@@ -51,7 +51,7 @@ const Mercatino = () => (
                 <Akademy />
               </Col>
               <Col md={8} sm={9}>
-                <div class="text">
+                <div className="text">
                   <h2>Akademy</h2>
                   <p>
                     <FontAwesomeIcon icon="calendar" /> Dal 7 al 13 Settembre
@@ -79,7 +79,7 @@ const Mercatino = () => (
                 <Extraordy />
               </Col>
               <Col md={8} sm={9}>
-                <div class="text">
+                <div className="text">
                   <h2>Corso Red Hat® System Administrator</h2>
                   <p>
                     <FontAwesomeIcon icon="calendar" /> 3, 10, 17 e 24 Maggio
@@ -111,7 +111,7 @@ const Mercatino = () => (
                 <Tgif />
               </Col>
               <Col md={8} sm={9}>
-                <div class="text">
+                <div className="text">
                   <h2>Thank God It's Friday</h2>
                   <p>
                     <FontAwesomeIcon icon="map-marked-alt" /> Università Milano
@@ -133,10 +133,10 @@ const Mercatino = () => (
           </Container>
         </div>
       </section>
-      {/* <div id="picture4" class="img eh20" />
-      <div id="picture1" class="img eh20" />
-      <div id="picture2" class="img eh20" />
-      <div id="picture3" class="img eh20" /> */}
+      {/* <div id="picture4" className="img eh20" />
+      <div id="picture1" className="img eh20" />
+      <div id="picture2" className="img eh20" />
+      <div id="picture3" className="img eh20" /> */}
       <div className="events-footer">
         E molto altro ancora prossimamente. Rimani aggiornato su{' '}
         <a href="https://fb.me/unixmib">

@@ -7,7 +7,7 @@ const Mercatino = () => (
   <Layout>
     <main className="page" id="page-mercatino">
       <div id="hero">
-        <h2 class="title">
+        <h2 className="title">
           Il nostro <span>mercatino</span>
         </h2>
       </div>
@@ -17,8 +17,8 @@ const Mercatino = () => (
           <Row>
             <Col>
               <h2>Cos'è il mercatino</h2>
-              <FontAwesomeIcon class="faicon" icon="question" />
-              <div class="desc">
+              <FontAwesomeIcon className="faicon" icon="question" />
+              <div className="desc">
                 <p>
                   Il mercatino dell'usato di unixMiB ti permette di creare
                   inserzioni per vendere quello che non usi più. Dai una seconda
@@ -42,9 +42,9 @@ const Mercatino = () => (
           <h2>Come partecipare</h2>
           <Row>
             <Col md={6} className="pb-4">
-              <FontAwesomeIcon class="faicon" icon="check" />
-              <h3 class="title">Cosa posso vendere</h3>
-              <div class="desc">
+              <FontAwesomeIcon className="faicon" icon="check" />
+              <h3 className="title">Cosa posso vendere</h3>
+              <div className="desc">
                 <p>
                   Nel mercatino sono ammesse tutte le inserzioni pertinenti al
                   mondo della tecnologia
@@ -59,9 +59,9 @@ const Mercatino = () => (
               </Button>
             </Col>
             <Col md={6} className="pb-4">
-              <FontAwesomeIcon class="faicon" icon="compass" />
-              <h3 class="title">Cosa mi serve</h3>
-              <div class="desc">
+              <FontAwesomeIcon className="faicon" icon="compass" />
+              <h3 className="title">Cosa mi serve</h3>
+              <div className="desc">
                 <p>
                   Per utilizzare il mercatino avrai bisogno di utilizzare{' '}
                   <a href="https://telegram.org/">Telegram</a>, un programma

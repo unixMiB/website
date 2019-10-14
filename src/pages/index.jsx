@@ -10,11 +10,11 @@ const IndexPage = () => (
       <div id="hero">
         <Container>
           <Logo alt="unixMiB logo (a penguin)" />
-          <h2 class="subtitle normal-text ">
-            Gruppo Utenti <span class="tinted">Linux</span>
+          <h2 className="subtitle normal-text ">
+            Gruppo Utenti <span className="tinted">Linux</span>
           </h2>
-          <h2 class="subtitle normal-text">
-            Università Milano <span class="tinted">Bicocca</span>
+          <h2 className="subtitle normal-text">
+            Università Milano <span className="tinted">Bicocca</span>
           </h2>
         </Container>
       </div>
@@ -22,43 +22,43 @@ const IndexPage = () => (
       <section id="chiSiamo">
         {
           // eslint-disable-next-line
-          <a class="anchor" aria-hidden="true" id="chi-siamo" />
+          <a className="anchor" aria-hidden="true" id="chi-siamo" />
         }
         <Container>
           <h2>Chi Siamo</h2>
-          <FontAwesomeIcon class="faicon" icon="users" />
-          <div class="desc">
-            unix<span class="h2">MiB</span> nasce nell'Ottobre 2015 per opera di
-            alcuni studenti della <span class="h2">Bicocca</span> appassionati
-            di <span class="h2">Open Source</span> e di{' '}
-            <span class="h2">Linux</span>.
+          <FontAwesomeIcon className="faicon" icon="users" />
+          <div className="desc">
+            unix<span className="h2">MiB</span> nasce nell'Ottobre 2015 per opera di
+            alcuni studenti della <span className="h2">Bicocca</span> appassionati
+            di <span className="h2">Open Source</span> e di{' '}
+            <span className="h2">Linux</span>.
           </div>
         </Container>
       </section>
 
-      <div class="img eh15" id="foto1" />
+      <div className="img eh15" id="foto1" />
 
       <section id="cosaFacciamo">
         {
           // eslint-disable-next-line
-          <a class="anchor" aria-hidden="true" id="obiettivi" />
+          <a className="anchor" aria-hidden="true" id="obiettivi" />
         }
         <Container>
           <h2>I nostri obiettivi</h2>
           <Row>
             <Col md={6} className="pb-4">
-              <FontAwesomeIcon class="faicon" icon="flag" />
-              <h3 class="title">Eventi</h3>
-              <p class="desc">
+              <FontAwesomeIcon className="faicon" icon="flag" />
+              <h3 className="title">Eventi</h3>
+              <p className="desc">
                 Organizziamo eventi per diffondere la filosofia dell'open source
                 e del software libero.
                 <br /> Hai un idea da proporre? Condividila con noi!
               </p>
             </Col>
             <Col md={6} className="pb-4">
-              <FontAwesomeIcon class="faicon" icon="wrench" />
-              <h3 class="title">Assistenza</h3>
-              <p class="desc">
+              <FontAwesomeIcon className="faicon" icon="wrench" />
+              <h3 className="title">Assistenza</h3>
+              <p className="desc">
                 Difficoltà nell'installare Linux o problemi con qualche
                 applicazione?
                 <br /> Nessun problema, offriamo supporto tecnico gratuito agli
@@ -70,12 +70,12 @@ const IndexPage = () => (
         </Container>
       </section>
 
-      <div class="img eh15" id="foto2" />
+      <div className="img eh15" id="foto2" />
 
       <section id="comeContattarci">
         {
           // eslint-disable-next-line
-          <a class="anchor" aria-hidden="true" id="contattaci" />
+          <a className="anchor" aria-hidden="true" id="contattaci" />
         }
         <h2>Come contattarci</h2>
         <Container>
@@ -87,7 +87,7 @@ const IndexPage = () => (
                 target="_blank"
               >
                 <FontAwesomeIcon
-                  class="faicon"
+                  className="faicon"
                   icon={['fab', 'telegram-plane']}
                 />
                 <b>Telegram</b>
@@ -100,14 +100,14 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon class="faicon" icon="bullhorn" />
+                <FontAwesomeIcon className="faicon" icon="bullhorn" />
                 <b>Canale</b>
               </a>
             </Col>
 
             <Col md>
               <a href="/mercatino/">
-                <FontAwesomeIcon class="faicon" icon="shopping-basket" />
+                <FontAwesomeIcon className="faicon" icon="shopping-basket" />
                 <b>Mercatino</b>
               </a>
             </Col>
@@ -118,7 +118,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon class="faicon" icon={['fab', 'facebook-f']} />
+                <FontAwesomeIcon className="faicon" icon={['fab', 'facebook-f']} />
                 <b>Facebook</b>
               </a>
             </Col>
@@ -129,7 +129,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon class="faicon" icon={['fab', 'github-alt']} />
+                <FontAwesomeIcon className="faicon" icon={['fab', 'github-alt']} />
                 <b>Github</b>
               </a>
             </Col>
