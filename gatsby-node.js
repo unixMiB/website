@@ -5,10 +5,11 @@
  */
 
 // You can delete this file if you're not using it
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = ({ actions }) => {
   const { createRedirect } = actions
+
   createRedirect({
-    fromPath: 'https://unixmub.netlify.com/*',
+    fromPath: 'https://unixmib.netlify.com/*',
     toPath: 'https://unixmib.org/:splat',
     isPermanent: true,
     redirectInBrowser: true,
