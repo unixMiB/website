@@ -12,7 +12,7 @@ const Header = ({ siteData }) => (
           id="navbar"
           collapseOnSelect
           expand="md"
-          variant={theme==='dark'?'dark':'light'}
+          variant={theme === 'dark' ? 'dark' : 'light'}
           style={{
             backgroundColor: siteData.theme,
           }}

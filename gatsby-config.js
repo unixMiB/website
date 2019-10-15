@@ -9,7 +9,7 @@ module.exports = {
     //'Cristian Baldi <bld.cris.96@gmail.com>, Kowalski7cc <kowalski.7cc@gmail.com>',
     theme: '#ffffff',
     navbarVariant: 'light',
-    siteUrl: 'https://unixmib.com/',
+    siteUrl: 'https://unixmib.org/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

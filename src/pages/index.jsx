@@ -28,9 +28,9 @@ const IndexPage = () => (
           <h2>Chi Siamo</h2>
           <FontAwesomeIcon className="faicon" icon="users" />
           <div className="desc">
-            unix<span className="h2">MiB</span> nasce nell'Ottobre 2015 per opera di
-            alcuni studenti della <span className="h2">Bicocca</span> appassionati
-            di <span className="h2">Open Source</span> e di{' '}
+            unix<span className="h2">MiB</span> nasce nell'Ottobre 2015 per
+            opera di alcuni studenti della <span className="h2">Bicocca</span>{' '}
+            appassionati di <span className="h2">Open Source</span> e di{' '}
             <span className="h2">Linux</span>.
           </div>
         </Container>
@@ -118,7 +118,10 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon className="faicon" icon={['fab', 'facebook-f']} />
+                <FontAwesomeIcon
+                  className="faicon"
+                  icon={['fab', 'facebook-f']}
+                />
                 <b>Facebook</b>
               </a>
             </Col>
@@ -129,7 +132,10 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <FontAwesomeIcon className="faicon" icon={['fab', 'github-alt']} />
+                <FontAwesomeIcon
+                  className="faicon"
+                  icon={['fab', 'github-alt']}
+                />
                 <b>Github</b>
               </a>
             </Col>
