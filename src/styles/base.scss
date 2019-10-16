@@ -11,6 +11,9 @@ html {
   .link {
     color: #424242;
   }
+  .link:hover {
+    color: $accent;
+  }
 }
 
 footer {
@@ -51,6 +54,9 @@ a.anchor {
     background-color: $gray-900 !important;
     .link {
       color: $gray-200;
+    }
+    .link:hover {
+      color: $accent;
     }
   }
 }
