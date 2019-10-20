@@ -38,12 +38,19 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteData={data.site.siteMetadata} />
-        {children}
-        <footer>
-          Copyright unix<span>MiB</span> 2019 - Creative Commons
-          Attribution-ShareAlike <span>4.0</span> International
-        </footer>
+        <div className="d-flex flex-column"
+          style={{minHeight: '100vh'}}
+        >
+          <Header siteData={data.site.siteMetadata} />
+          <div className="container-fluid flex-grow-1"
+            style={{padding: 0}}>
+            {children}
+          </div>
+          <footer>
+            Copyright unix<span>MiB</span> 2019 - Creative Commons
+            Attribution-ShareAlike <span>4.0</span> International
+          </footer>
+        </div>
       </>
     )}
   />

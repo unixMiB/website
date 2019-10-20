@@ -12,7 +12,7 @@ const NotFoundPage = () => (
         </h2>
       </div>
 
-      <section>
+      <section className="404-text">
         <Container>
           <div className="center">
             <h2>La pagina che stai cercando non esiste</h2>
