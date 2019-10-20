@@ -8,6 +8,16 @@ main#page-home {
       margin: 2rem 0 2rem 0;
       .row {
         margin-top: 1rem;
+
+        .col-md{
+          a:hover {
+            color: $accent;
+            b{
+              text-decoration: none;
+            }
+          }
+        }     
+
       }
     }
   }
