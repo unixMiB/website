@@ -12,7 +12,7 @@
       font-size: 2.5rem;
       @include tshadow;
       span {
-        color: $accent;
+        color: $unixmib-green;
       }
     }
 
@@ -51,7 +51,7 @@
       .h2 {
         display: inline-block;
         font-weight: 500;
-        color: $accent;
+        color: $unixmib-green;
         font-size: 1.5rem;
         line-height: 1.3rem;
       }
@@ -63,7 +63,7 @@
         display: block;
         font-size: 2.25rem;
         font-weight: normal;
-        color: $accent;
+        color: $unixmib-green;
       }
 
       .desc {

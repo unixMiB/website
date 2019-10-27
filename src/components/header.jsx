@@ -13,9 +13,6 @@ const Header = ({ siteData }) => (
           collapseOnSelect
           expand="md"
           variant={theme === 'dark' ? 'dark' : 'light'}
-          style={{
-            backgroundColor: siteData.theme,
-          }}
         >
           <Container>
             <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/">

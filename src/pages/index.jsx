@@ -3,9 +3,11 @@ import Layout from '../components/layout'
 import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Container, Col, Row } from 'react-bootstrap'
+import SEO from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
+    <SEO/>
     <main className="page" id="page-home">
       <div id="hero">
         <Container>

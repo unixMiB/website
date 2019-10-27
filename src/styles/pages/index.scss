@@ -2,22 +2,12 @@ main#page-home {
   section {
     &#chiSiamo,
     &#cosaFacciamo {
-      margin: 2rem 0 3rem 0;
+      margin: 3rem 0 3rem 0;
     }
     &#comeContattarci {
-      margin: 2rem 0 2rem 0;
+      margin: 3rem 0 3rem 0;
       .row {
         margin-top: 1rem;
-
-        .col-md{
-          a:hover {
-            color: $accent;
-            b{
-              text-decoration: none;
-            }
-          }
-        }     
-
       }
     }
   }

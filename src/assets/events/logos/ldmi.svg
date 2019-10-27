@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="15rem" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="10rem" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
   <path id="path8575" d="M250,125c0,68.5 -56.484,125 -124.999,125c-68.515,0 -124.999,-56.5 -124.999,-125c0,-68.5 56.484,-125 124.999,-125c68.515,0 124.999,56.5 124.999,125Z" style="fill:#fee900;fill-rule:nonzero;" />
   <clipPath id="_clip1">
     <path id="path13898" d="M239.806,124.333c0,66 -52.473,120.167 -116.142,120.167c-63.836,0 -116.309,-54.167 -116.309,-120.167c0,-65.833 52.473,-120 116.309,-120c63.669,0 116.142,54.167 116.142,120Z" clip-rule="nonzero" />

@@ -1,60 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
+function Layout({ children }) {
+  const { site } = useStaticQuery(
+    graphql`
       query SiteTitleQuery {
         site {
           siteMetadata {
             title
-            description
-            theme
-            keywords
-            author
-            navbarVariant
           }
         }
       }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'theme-color', content: data.site.siteMetadata.theme },
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-            { name: 'application-name', content: data.site.siteMetadata.title },
-            { name: 'author', content: data.site.siteMetadata.author },
-            { name: 'keywords', content: data.site.siteMetadata.keywords },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <div className="d-flex flex-column"
-          style={{minHeight: '100vh'}}
-        >
-          <Header siteData={data.site.siteMetadata} />
-          <div className="container-fluid flex-grow-1"
-            style={{padding: 0}}>
-            {children}
-          </div>
-          <footer>
-            Copyright unix<span>MiB</span> 2019 - Creative Commons
-            Attribution-ShareAlike <span>4.0</span> International
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
+    `,
+  )
+  return (
+    <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
+      <Header siteData={site.siteMetadata} />
+      <div className="container-fluid flex-grow-1" style={{ padding: 0 }}>
+        {children}
+      </div>
+      <footer>
+        Copyright unix<span>MiB</span> {new Date().getFullYear()} - Creative
+        Commons <span>Attribution-ShareAlike 4.0</span> International
+      </footer>
+    </div>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

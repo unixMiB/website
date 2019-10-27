@@ -16,37 +16,8 @@
   }
 }
 
-.hc,
-.center {
-  text-align: center;
-}
-
-.hl,
-.left {
-  text-align: left;
-}
-
-.hr,
-.right {
-  text-align: right;
-}
-
-.vc {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.light-text {
-  font-weight: lighter;
-}
-
-.normal-text {
-  font-weight: normal;
-}
-
 .tinted {
-  color: $accent;
+  color: $unixmib-green;
 }
 
 @mixin cover-background($imageUrl, $overlay) {

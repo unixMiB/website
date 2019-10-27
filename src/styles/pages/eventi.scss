@@ -1,85 +1,56 @@
 #page-eventi {
   section#eventi {
-    div {
-      &.ldmi {
-        background: #ffb600;
-        color: black;
 
-        a:link,
-        a:visited {
-          color: black;
-          &:hover {
-            color: var(--cyan);
-          }
-        }
-      }
+    margin-top: 3rem;
 
-      &.akademy {
-        background: #aaccee;
-        color: black;
-
-        a:link,
-        a:visited {
-          color: black;
-          &:hover {
-            color: var(--cyan);
-          }
-        }
-      }
-
-      &.rhel {
-        background: #cb0000;
-        color: black;
-
-        a:link,
-        a:visited {
-          color: black;
-          &:hover {
-            color: var(--cyan);
-          }
-        }
-      }
-
-      &.tgif {
-        background: #006879;
-        color: white;
-
-        a:link,
-        a:visited {
-          color: white;
-          &:hover {
-            color: var(--cyan);
-          }
-        }
-      }
+    hr {
+      width: 50%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
 
-    .row {
-      padding: 3rem 0 3rem 0;
-      .text {
-        h2 {
-          padding-bottom: 1rem;
+    div {
+      .row {
+        .logo-backgroud {
+          background-color: $white;
+          padding: 2rem;
         }
-        text-align: left;
-        h2 {
-          line-height: 2rem;
+        // padding: 3rem 0 3rem 0;
+        .text {
+          h2 {
+            padding-bottom: 1rem;
+          }
+          text-align: left;
+          h2 {
+            line-height: 2rem;
+          }
         }
       }
     }
   }
 }
 
+.dark {
+  #page-eventi {
+    section#eventi {
+      .logo-backgroud {
+        background-color: white;
+      }
+    }
+  }
+}
+
 .events-footer {
-  color: white;
-  background-color: #212121;
   text-align: center;
-  padding: 2rem 2.5rem 2rem;
+  padding: 0rem 2.5rem 2rem;
+  font-size: 1.2rem;
   span,
+  a,
   a:link,
   a:visited {
-    color: $accent;
-    &:hover {
-      color: var(--cyan);
-    }
+    color: $unixmib-green;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }

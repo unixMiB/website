@@ -1,19 +1,10 @@
-body {
-  background-color: $white;
-  color: $black;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-#navbar {
-  .link {
-    color: #424242;
-  }
-  .link:hover {
-    color: $accent;
-  }
+body {
+  background-color: $white;
+  color: $unixmib-dark;
 }
 
 footer {
@@ -23,7 +14,7 @@ footer {
   color: $white;
   text-align: center;
   span {
-    color: $accent;
+    color: $unixmib-green;
   }
 }
 
@@ -38,38 +29,45 @@ a.anchor {
   }
 }
 
+a {
+  color: $unixmib-dark;
+  &:hover {
+    text-decoration: none;
+    color: $unixmib-green;
+    b {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Dark mode overrides
 .dark {
   background-color: $gray-900;
   color: $gray-100;
 
   a {
     color: $gray-100;
+    &:hover {
+      text-decoration: none;
+      color: $unixmib-green;
+      b {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   footer {
     background-color: black;
   }
 
-  #navbar {
+  .navbar {
     background-color: $gray-900 !important;
     .link {
-      color: $gray-200;
-    }
-    .link:hover {
-      color: $accent;
-    }
-  }
-}
-
-a {
-  color: $black;
-
-  &:hover {
-    text-decoration: none;
-    color: var(--blue);
-
-    b {
-      text-decoration: underline;
+      color: $gray-200 !important;
     }
   }
 }
