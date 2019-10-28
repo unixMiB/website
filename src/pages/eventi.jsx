@@ -59,7 +59,7 @@ const Eventi = () => (
           {events.map(event => {
             return (
               <>
-                <Row className="justify-content-center d-flex">
+                <Row className="justify-content-center align-items-center d-flex">
                   <Col
                     xl={5}
                     md={4}
@@ -123,7 +123,7 @@ const Eventi = () => (
                         {event.repository != null ? (
                           <>
                             <FontAwesomeIcon icon={['fab', 'github-alt']} />{' '}
-                            <a href={'https://' + event.repository}>
+                            <a target="_blank" href={'https://' + event.repository}>
                               {event.repository}
                             </a>
                             <br />
@@ -134,7 +134,7 @@ const Eventi = () => (
                         {event.website != null ? (
                           <>
                             <FontAwesomeIcon icon="globe" />{' '}
-                            <a href={event.website}>{event.website}</a>
+                            <a target="_blank" href={'https://' + event.website}>{event.website}</a>
                           </>
                         ) : (
                           ''
