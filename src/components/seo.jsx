@@ -28,7 +28,10 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const siteTitle = title==null?site.siteMetadata.title:`${title} - ${site.siteMetadata.title}`
+  const siteTitle =
+    title == null
+      ? site.siteMetadata.title
+      : `${title} - ${site.siteMetadata.title}`
 
   return (
     <Helmet

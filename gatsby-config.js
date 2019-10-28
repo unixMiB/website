@@ -21,6 +21,12 @@ module.exports = {
         extensions: ['css', 'html', 'js', 'svg'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://unixmib.org/',
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-manifest',

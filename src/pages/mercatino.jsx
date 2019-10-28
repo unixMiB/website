@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 const Mercatino = () => (
   <Layout>
-    <SEO title="Mercatino"/>
+    <SEO title="Mercatino" />
     <main className="page" id="page-mercatino">
       <div id="hero">
         <h2 className="title">
