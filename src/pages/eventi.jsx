@@ -123,7 +123,7 @@ const Eventi = () => (
                         {event.repository != null ? (
                           <>
                             <FontAwesomeIcon icon={['fab', 'github-alt']} />{' '}
-                            <a target="_blank" href={'https://' + event.repository}>
+                            <a target="_blank" rel="noopener noreferrer" href={'https://' + event.repository}>
                               {event.repository}
                             </a>
                             <br />
@@ -134,7 +134,7 @@ const Eventi = () => (
                         {event.website != null ? (
                           <>
                             <FontAwesomeIcon icon="globe" />{' '}
-                            <a target="_blank" href={'https://' + event.website}>{event.website}</a>
+                            <a target="_blank" rel="noopener noreferrer" href={'https://' + event.website}>{event.website}</a>
                           </>
                         ) : (
                           ''
@@ -151,11 +151,11 @@ const Eventi = () => (
       </section>
       <div className="events-footer">
         E molto altro ancora prossimamente. Rimani aggiornato su{' '}
-        <a href="https://fb.me/unixmib">
+        <a target="_blank" rel="noopener noreferrer" href="https://fb.me/unixmib">
           <b>Facebook</b>
         </a>{' '}
         e su{' '}
-        <a href="https://t.me/unixmibinfo">
+        <a target="_blank" rel="noopener noreferrer" href="https://t.me/unixmibinfo">
           <b>Telegram</b>
         </a>{' '}
         per non perderti nulla!
