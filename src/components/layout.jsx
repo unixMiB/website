@@ -14,12 +14,12 @@ function Layout({ children }) {
           }
         }
       }
-    `,
+    `
   )
   return (
-    <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
+    <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
       <Header siteData={site.siteMetadata} />
-      <div className="container-fluid flex-grow-1" style={{ padding: 0 }}>
+      <div className='container-fluid flex-grow-1' style={{ padding: 0 }}>
         {children}
       </div>
       <footer>

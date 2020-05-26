@@ -2,32 +2,32 @@
 
 ## Requirements
 
-* `node`, `npm`, `git`, `git-lfs` (https://git-lfs.github.com/)
-* Knowledge of HTML, Sass
-  * Nice to have: Knowledge of Pug (https://github.com/pugjs/pug#syntax)
-    * Very fast to learn if you know html
+- `node`, `npm`, `git`, `git-lfs` (https://git-lfs.github.com/)
+- Knowledge of HTML, Sass
+  - Nice to have: Knowledge of Pug (https://github.com/pugjs/pug#syntax)
+    - Very fast to learn if you know html
 
 ## Working on the project
 
-* `git clone https://github.com/unixMiB/unixmib.github.io`
-* `git lfs pull`
-* `npm install`
-* `npm run hot`
-* Edit files in `src` folder.
-* The website will be available on `http://localhost:8080/index.html`
+- `git clone https://github.com/unixMiB/unixmib.github.io`
+- `git lfs pull`
+- `npm install`
+- `npm run hot`
+- Edit files in `src` folder.
+- The website will be available on `http://localhost:8080/index.html`
 
 ### Building for production
 
-* `npm run production`
-* built files will be in the `dist/folder`
+- `npm run production`
+- built files will be in the `dist/folder`
 
 ## Technologies & Tools
 
-* Webpack for build management
-  * Most of the work is taken care by [laravel-mix](https://github.com/JeffreyWay/laravel-mix) with a few custom configs inside `webpack.mix.js`
-* Pug for HTML Templating
-* Sass for the style (with a few helper classes)
-* Other: Fontawesome Icons
+- Webpack for build management
+  - Most of the work is taken care by [laravel-mix](https://github.com/JeffreyWay/laravel-mix) with a few custom configs inside `webpack.mix.js`
+- Pug for HTML Templating
+- Sass for the style (with a few helper classes)
+- Other: Fontawesome Icons
 
 ## Accessibility
 

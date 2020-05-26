@@ -6,23 +6,23 @@ import SEO from '../components/seo'
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="Pagina non trovata" />
-    <main className="page" id="page-404">
-      <div id="hero">
-        <h2 className="title">
+    <SEO title='Pagina non trovata' />
+    <main className='page' id='page-404'>
+      <div id='hero'>
+        <h2 className='title'>
           Pagina non <span>trovata</span>
         </h2>
       </div>
 
-      <section className="404-text">
+      <section className='404-text'>
         <Container>
-          <div className="center">
+          <div className='center'>
             <h2>La pagina che stai cercando non esiste</h2>
             <br />
-            <FontAwesomeIcon className="faicon" icon="sad-tear" />
+            <FontAwesomeIcon className='faicon' icon='sad-tear' />
             <br />
-            <Button variant="success" href="/">
-              <FontAwesomeIcon icon="home" /> Homepage
+            <Button variant='success' href='/'>
+              <FontAwesomeIcon icon='home' /> Homepage
             </Button>
           </div>
         </Container>

@@ -9,38 +9,36 @@ const Header = ({ siteData }) => (
     <ThemeToggler>
       {({ theme }) => (
         <Navbar
-          id="navbar"
+          id='navbar'
           collapseOnSelect
-          expand="md"
-          variant={theme === 'dark' ? 'dark' : 'light'}
-        >
+          expand='md'
+          variant={theme === 'dark' ? 'dark' : 'light'}>
           <Container>
-            <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href="/">
+            <Navbar.Brand style={{ paddingTop: 0, paddingBottom: 0 }} href='/'>
               {theme === 'dark' ? (
                 <CombinationMarkDark />
               ) : (
                 <CombinationMarkLight />
               )}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse
-              id="responsive-navbar-nav"
-              className="justify-content-end"
-            >
+              id='responsive-navbar-nav'
+              className='justify-content-end'>
               <Nav>
-                <Nav.Link className="link" href="/#chi-siamo">
+                <Nav.Link className='link' href='/#chi-siamo'>
                   Chi siamo
                 </Nav.Link>
-                <Nav.Link className="link" href="/#obiettivi">
+                <Nav.Link className='link' href='/#obiettivi'>
                   Obiettivi
                 </Nav.Link>
-                <Nav.Link className="link" href="/eventi">
+                <Nav.Link className='link' href='/eventi'>
                   Eventi
                 </Nav.Link>
-                <Nav.Link className="link" href="/mercatino">
+                <Nav.Link className='link' href='/mercatino'>
                   Mercatino
                 </Nav.Link>
-                <Nav.Link className="link" href="/#contattaci">
+                <Nav.Link className='link' href='/#contattaci'>
                   Contattaci
                 </Nav.Link>
               </Nav>

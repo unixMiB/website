@@ -46,5 +46,5 @@ library.add(
   faQuestion,
   faEnvelope,
   faChevronRight,
-  faHome,
+  faHome
 )

@@ -46,39 +46,41 @@ const events = [
 
 const Eventi = () => (
   <Layout>
-    <SEO title="Eventi" />
-    <main className="page" id="page-eventi">
-      <div id="hero">
-        <h2 className="title">
+    <SEO title='Eventi' />
+    <main className='page' id='page-eventi'>
+      <div id='hero'>
+        <h2 className='title'>
           I nostri <span>eventi</span>
         </h2>
       </div>
 
-      <section id="eventi">
+      <section id='eventi'>
         <Container>
           {events.map(event => {
             return (
               <>
-                <Row className="justify-content-center align-items-center d-flex">
+                <Row className='justify-content-center align-items-center d-flex'>
                   <Col
                     xl={5}
                     md={4}
                     sm={0}
-                    className="d-none text-right d-md-block d-xl-block"
-                  >
+                    className='d-none text-right d-md-block d-xl-block'>
                     <div style={{ marginLeft: 'auto' }}>
                       <event.logo
-                        class="logo-backgroud rounded"
-                        style={{ maxWidth: '15rem', maxHeigth: '10rem' }}
+                        class='logo-backgroud rounded'
+                        style={{
+                          maxWidth: '15rem',
+                          maxHeigth: '10rem',
+                        }}
                       />
                     </div>
                   </Col>
-                  <Col xl={7} md={8} sm={12} className="align-middle">
-                    <div className="text">
+                  <Col xl={7} md={8} sm={12} className='align-middle'>
+                    <div className='text'>
                       <h2>
                         {event.name}{' '}
                         {event.new != null && event ? (
-                          <Badge className="" variant="success">
+                          <Badge className='' variant='success'>
                             New
                           </Badge>
                         ) : (
@@ -88,7 +90,7 @@ const Eventi = () => (
                       <p>
                         {event.date != null ? (
                           <>
-                            <FontAwesomeIcon icon="calendar" /> {event.date}
+                            <FontAwesomeIcon icon='calendar' /> {event.date}
                             <br />
                           </>
                         ) : (
@@ -96,7 +98,7 @@ const Eventi = () => (
                         )}
                         {event.time != null ? (
                           <>
-                            <FontAwesomeIcon icon="clock" /> {event.time}
+                            <FontAwesomeIcon icon='clock' /> {event.time}
                             <br />
                           </>
                         ) : (
@@ -104,7 +106,7 @@ const Eventi = () => (
                         )}
                         {event.location != null ? (
                           <>
-                            <FontAwesomeIcon icon="map-marked-alt" />{' '}
+                            <FontAwesomeIcon icon='map-marked-alt' />{' '}
                             {event.location}
                             <br />
                           </>
@@ -113,7 +115,7 @@ const Eventi = () => (
                         )}
                         {event.building != null ? (
                           <>
-                            <FontAwesomeIcon icon="chevron-right" />{' '}
+                            <FontAwesomeIcon icon='chevron-right' />{' '}
                             {event.building}
                             <br />
                           </>
@@ -123,7 +125,10 @@ const Eventi = () => (
                         {event.repository != null ? (
                           <>
                             <FontAwesomeIcon icon={['fab', 'github-alt']} />{' '}
-                            <a target="_blank" rel="noopener noreferrer" href={'https://' + event.repository}>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href={'https://' + event.repository}>
                               {event.repository}
                             </a>
                             <br />
@@ -133,8 +138,13 @@ const Eventi = () => (
                         )}
                         {event.website != null ? (
                           <>
-                            <FontAwesomeIcon icon="globe" />{' '}
-                            <a target="_blank" rel="noopener noreferrer" href={'https://' + event.website}>{event.website}</a>
+                            <FontAwesomeIcon icon='globe' />{' '}
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href={'https://' + event.website}>
+                              {event.website}
+                            </a>
                           </>
                         ) : (
                           ''
@@ -149,13 +159,19 @@ const Eventi = () => (
           })}
         </Container>
       </section>
-      <div className="events-footer">
+      <div className='events-footer'>
         E molto altro ancora prossimamente. Rimani aggiornato su{' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://fb.me/unixmib">
+        <a
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://fb.me/unixmib'>
           <b>Facebook</b>
         </a>{' '}
         e su{' '}
-        <a target="_blank" rel="noopener noreferrer" href="https://t.me/unixmibinfo">
+        <a
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://t.me/unixmibinfo'>
           <b>Telegram</b>
         </a>{' '}
         per non perderti nulla!
