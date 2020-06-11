@@ -35,9 +35,6 @@ module.exports = {
         short_name: 'unixMiB',
         start_url: '/',
         lang: 'it',
-        icon_options: {
-          purpose: 'maskable',
-        },
         description: 'Linux User Group, Università Milano Bicocca',
         background_color: '#fffffa',
         theme_color: '#343a40',
