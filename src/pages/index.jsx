@@ -97,7 +97,7 @@ const IndexPage = () => (
 
             <Col xs="6" sm="4" lg>
               <a
-                href='https://telegram.me/unixmibinfo/'
+                href='https://telegram.me/s/unixmibinfo/'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <FontAwesomeIcon className='faicon' icon='bullhorn' />
