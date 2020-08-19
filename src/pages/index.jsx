@@ -82,7 +82,7 @@ const IndexPage = () => (
         <h2>La nostra rete</h2>
         <Container>
           <Row>
-            <Col md>
+            <Col xs="6" sm="4" lg>
               <a
                 href='https://telegram.me/unixmib/'
                 rel='noopener noreferrer'
@@ -95,7 +95,7 @@ const IndexPage = () => (
               </a>
             </Col>
 
-            <Col md>
+            <Col xs="6" sm="4" lg>
               <a
                 href='https://telegram.me/unixmibinfo/'
                 rel='noopener noreferrer'
@@ -105,14 +105,14 @@ const IndexPage = () => (
               </a>
             </Col>
 
-            <Col md>
+            <Col xs="6" sm="4" lg>
               <a href='/mercatino/'>
                 <FontAwesomeIcon className='faicon' icon='shopping-basket' />
                 <b>Mercatino</b>
               </a>
             </Col>
 
-            <Col md>
+            <Col xs="6" sm="4" lg>
               <a
                 href='https://www.facebook.com/unixmib/'
                 rel='noopener noreferrer'
@@ -125,7 +125,7 @@ const IndexPage = () => (
               </a>
             </Col>
 
-            <Col md>
+            <Col xs="6" sm="4" lg>
               <a
                 href='https://github.com/unixmib/'
                 rel='noopener noreferrer'
@@ -136,6 +136,13 @@ const IndexPage = () => (
                 />
                 <b>Github</b>
               </a>
+            </Col>
+
+            <Col xs="6" sm="4" lg>
+              <a
+                href='mailto:unixmib@gmail.com'
+                rel='noopener noreferrer'
+                target='_blank'><FontAwesomeIcon className="faicon" icon="envelope"/><b>Email</b></a>
             </Col>
           </Row>
         </Container>

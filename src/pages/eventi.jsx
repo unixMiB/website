@@ -11,7 +11,6 @@ import SEO from '../components/seo'
 const events = [
   {
     logo: Ldmi,
-    new: true,
     name: 'Linux Day Milano 2019',
     date: 'Sabato 26 Ottobre 2019',
     time: 'Ore 9:30',
@@ -79,7 +78,7 @@ const Eventi = () => (
                     <div className='text'>
                       <h2>
                         {event.name}{' '}
-                        {event.new != null && event ? (
+                        {event.new ? (
                           <Badge className='' variant='success'>
                             New
                           </Badge>
