@@ -54,7 +54,7 @@ const IndexPage = () => (
               <p className='desc'>
                 Organizziamo eventi per diffondere la filosofia dell'open source
                 e del software libero.
-                <br /> Hai un idea da proporre? Condividila con noi!
+                <br /> Hai un'idea da proporre? Condividila con noi!
               </p>
             </Col>
             <Col md={6} className='pb-4'>
