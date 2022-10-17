@@ -84,20 +84,20 @@ const IndexPage = () => (
           <Row>
             <Col xs="6" sm="4" lg>
               <a
-                href='https://telegram.me/unixmib/'
+                href='https://t.me/+2ZtyPRNPVvc2ODhk'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <FontAwesomeIcon
                   className='faicon'
                   icon={['fab', 'telegram-plane']}
                 />
-                <b>Telegram</b>
+                <b>Chat</b>
               </a>
             </Col>
 
             <Col xs="6" sm="4" lg>
               <a
-                href='https://telegram.me/s/unixmibinfo/'
+                href='https://t.me/s/unixmib/'
                 rel='noopener noreferrer'
                 target='_blank'>
                 <FontAwesomeIcon className='faicon' icon='bullhorn' />
