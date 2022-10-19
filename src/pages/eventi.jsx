@@ -11,6 +11,15 @@ import SEO from '../components/seo'
 const events = [
   {
     logo: Ldmi,
+    name: 'Linux Day Milano 2022',
+    date: 'Sabato 26 Ottobre 2022',
+    time: 'Ore 9:00',
+    location: 'Università Milano Bicocca',
+    building: 'Edificio U6',
+    website: 'linuxdaymilano.org',
+  },
+  {
+    logo: Ldmi,
     name: 'Linux Day Milano 2019',
     date: 'Sabato 26 Ottobre 2019',
     time: 'Ore 9:30',
