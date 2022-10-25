@@ -33,7 +33,7 @@ const events = [
     date: 'Dal 7 al 13 Settembre 2019',
     location: 'Università Milano Bicocca',
     building: 'Edifici U1, U2, U3 e U4',
-    website: 'akademy.kde.org/',
+    website: 'akademy.kde.org/2019',
   },
   {
     logo: Extraordy,
