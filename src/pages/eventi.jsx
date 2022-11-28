@@ -5,6 +5,7 @@ import Ldmi from '../assets/events/logos/ldmi.svg'
 import Akademy from '../assets/events/logos/akademy.svg'
 import Extraordy from '../assets/events/logos/extraordy.svg'
 import Tgif from '../assets/events/logos/tgif.svg'
+import Digitalmeet from '../assets/events/logos/digitalmeet.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SEO from '../components/seo'
 
@@ -12,7 +13,7 @@ const events = [
   {
     logo: Ldmi,
     name: 'Linux Day Milano 2022',
-    date: 'Sabato 26 Ottobre 2022',
+    date: 'Sabato 26 ottobre 2022',
     time: 'Ore 9:00',
     location: 'Università Milano Bicocca',
     building: 'Edificio U6',
@@ -21,7 +22,7 @@ const events = [
   {
     logo: Ldmi,
     name: 'Linux Day Milano 2019',
-    date: 'Sabato 26 Ottobre 2019',
+    date: 'Sabato 26 ottobre 2019',
     time: 'Ore 9:30',
     location: 'Università Milano Bicocca',
     building: 'Edificio U7',
@@ -30,7 +31,7 @@ const events = [
   {
     logo: Akademy,
     name: 'Akademy',
-    date: 'Dal 7 al 13 Settembre 2019',
+    date: 'Dal 7 al 13 settembre 2019',
     location: 'Università Milano Bicocca',
     building: 'Edifici U1, U2, U3 e U4',
     website: 'akademy.kde.org/2019',
@@ -38,7 +39,7 @@ const events = [
   {
     logo: Extraordy,
     name: 'Corso Red Hat® System Administrator',
-    date: '3, 10, 17 e 24 Maggio 2019',
+    date: '3, 10, 17 e 24 maggio 2019',
     location: 'Università Milano Bicocca',
     building: 'Edificio U24',
     website: 'extraordy.com',
@@ -50,6 +51,15 @@ const events = [
     location: 'Università Milano Bicocca',
     repository: 'github.com/unixMiB/events',
   },
+  {
+    logo: Digitalmeet,
+    name: 'DIGITALmeet 2017',
+    date: 'Venerdì 20 ottobre 2017',
+    time: 'Ore 14:45',
+    location: 'Università Milano Bicocca',
+    building: 'Edificio U2 - Aula 02',
+    repository: 'github.com/unixMiB/events'
+  }
 ]
 
 const Eventi = () => (
