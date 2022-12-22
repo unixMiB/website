@@ -2,11 +2,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Button, Container, Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const Mercatino = () => (
   <Layout>
-    <SEO title='Mercatino' />
+    <Seo title='Mercatino' />
     <main className='page' id='page-mercatino'>
       <div id='hero'>
         <h2 className='title'>

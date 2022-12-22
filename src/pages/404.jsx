@@ -2,11 +2,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Button, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title='Pagina non trovata' />
+    <Seo title='Pagina non trovata' />
     <main className='page' id='page-404'>
       <div id='hero'>
         <h2 className='title'>

@@ -7,7 +7,7 @@ import Extraordy from '../assets/events/logos/extraordy.svg'
 import Tgif from '../assets/events/logos/tgif.svg'
 import Digitalmeet from '../assets/events/logos/digitalmeet.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const events = [
   {
@@ -64,7 +64,7 @@ const events = [
 
 const Eventi = () => (
   <Layout>
-    <SEO title='Eventi' />
+    <Seo title='Eventi' />
     <main className='page' id='page-eventi'>
       <div id='hero'>
         <h2 className='title'>
