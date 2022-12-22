@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from '../components/layout'
 import Logo from '../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Container, Col, Row } from 'react-bootstrap'
-import SEO from '../components/seo'
+import { Container, Col, Row, Button } from 'react-bootstrap'
+import Seo from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <Seo />
     <main className='page' id='page-home'>
       <div id='hero'>
         <Container>
@@ -67,6 +67,13 @@ const IndexPage = () => (
                 studenti dell'università Bicocca per tutti gli strumenti open
                 source.
               </p>
+            </Col>
+          </Row>
+          <h2>Unisciti a noi</h2>
+          <Row>
+            <Col className='desc' xs={12} >
+              <p>Vuoi entrare a far parte della nostra squadra?<br />Compila il form usando una mail di ateneo e unisciti ai nostri canali social</p>
+              <Button variant='accent' size='lg' rel="noopener noreferrer" target='_blank' href='https://forms.gle/DLGvc8e8sJ5wDeAM9'>Associati ora</Button>
             </Col>
           </Row>
         </Container>
@@ -141,8 +148,7 @@ const IndexPage = () => (
             <Col xs="6" sm="4" lg>
               <a
                 href='mailto:unixmib@gmail.com'
-                rel='noopener noreferrer'
-                target='_blank'><FontAwesomeIcon className="faicon" icon="envelope"/><b>Email</b></a>
+                rel='noopener'><FontAwesomeIcon className="faicon" icon="envelope" /><b>Email</b></a>
             </Col>
           </Row>
         </Container>

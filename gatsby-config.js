@@ -11,10 +11,13 @@ module.exports = {
     navbarVariant: 'light',
     siteUrl: 'https://unixmib.org/',
   },
+  flags: {
+    FAST_DEV: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-dark-mode',
-    'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: 'gatsby-plugin-brotli',
       options: {
@@ -27,7 +30,12 @@ module.exports = {
         siteUrl: 'https://unixmib.org/',
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -38,7 +46,7 @@ module.exports = {
         description: 'Linux User Group, Università Milano Bicocca',
         background_color: '#fffffa',
         theme_color: '#343a40',
-        display: 'standalone',
+        display: 'minimal-ui',
         icon: './src/assets/favicon.png',
       },
     },
@@ -78,7 +86,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 1000,
+              maxWidth: 1920,
               linkImagesToOriginal: true,
               sizeByPixelDensity: true,
               quality: 70,
@@ -88,16 +96,22 @@ module.exports = {
         ],
       },
     },
-    'gatsby-image',
+    'gatsby-plugin-image',
     'gatsby-plugin-catch-links',
     {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: "gatsby-plugin-netlify",
       options: {
         headers: {
-          '/sw.js': ['Cache-Control: no-cache'],
+          "/sw.js": ["Cache-Control: no-cache"],
+          "/*": [
+            "Permissions-Policy: autoplay=(),camera=(),fullscreen=(),geolocation=(),microphone=(),payment=()",
+            "Strict-Transport-Security: max-age=63072000; includeSubdomains; preload",
+            "X-Frame-Options: DENY",
+            "X-Content-Type-Options: nosniff",
+            "Referrer-Policy: no-referrer",
+          ],
         },
         mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
         mergeCachingHeaders: true,
       },
     },

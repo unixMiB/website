@@ -13,6 +13,7 @@ footer {
   padding-bottom: 1rem;
   color: $white;
   text-align: center;
+
   span {
     color: $unixmib-green;
   }
@@ -29,11 +30,18 @@ a.anchor {
   }
 }
 
+.btn-accent {
+  background-color: $unixmib-green;
+  color: white;
+}
+
 a {
   color: $unixmib-dark;
+
   &:hover {
     text-decoration: none;
     color: $unixmib-green;
+
     b {
       text-decoration: underline;
     }
@@ -47,9 +55,11 @@ a {
 
   a {
     color: $gray-100;
+
     &:hover {
       text-decoration: none;
       color: $unixmib-green;
+
       b {
         text-decoration: underline;
       }
@@ -66,6 +76,7 @@ a {
 
   .navbar {
     background-color: $gray-900 !important;
+
     .link {
       color: $gray-200 !important;
     }
