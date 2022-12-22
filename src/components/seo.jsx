@@ -39,6 +39,16 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={siteTitle}
+      link={[
+        {
+          rel: "vcs-git",
+          href: "https://github.com/unixMiB/website.git",
+        },
+        {
+          rel: "me",
+          href: "https://mastodon.uno/@unixmib"
+        }
+      ]}
       meta={[
         {
           name: `keywords`,
