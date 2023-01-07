@@ -72,7 +72,7 @@ const IndexPage = () => (
           <h2>Unisciti a noi</h2>
           <Row>
             <Col className='desc' xs={12} >
-              <p>Vuoi entrare a far parte della nostra squadra?<br />Compila il form usando una mail di ateneo e unisciti ai nostri canali social</p>
+              <p>Vuoi entrare a far parte della nostra squadra?<br />Compila il form <u>accedendo con una mail di ateneo</u> (come @campus.unimib.it o @unimib.it) e unisciti ai nostri canali social</p>
               <Button variant='accent' size='lg' rel="noopener noreferrer" target='_blank' href='https://forms.gle/DLGvc8e8sJ5wDeAM9'>Associati ora</Button>
             </Col>
           </Row>
