@@ -1,18 +1,17 @@
 <script lang="ts">
 	import Header from '$lib/components/Header/Header.svelte';
-	import Events from '$lib/components/Events/Events.svelte';
-	import About from '$lib/components/About/About.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
-	console.log('homepage');
+	import { page } from '$app/stores';
 </script>
 
 <Header />
-<div class="homepage">
-	<Events />
-	<About />
+<div class="error">
+	<img src="/error_unixmib.png" alt="" />
+	<div class="status">Errore {$page.status}</div>
 </div>
 <Footer />
 
 <style lang="scss">
+	@import '../lib/scss/404.scss';
 	@import '../lib/scss/standard.scss';
 </style>

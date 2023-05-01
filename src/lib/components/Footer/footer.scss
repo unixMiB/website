@@ -1,0 +1,16 @@
+@import '../../scss/variables.scss';
+
+.footer {
+	border-top: 5px solid var(--green);
+	margin-top: 32px;
+	padding: 16px;
+
+	.container {
+		width: 1440px;
+		margin: 0 auto;
+		max-width: calc(100% - 32px);
+
+		font-size: 24px;
+		text-align: center;
+	}
+}

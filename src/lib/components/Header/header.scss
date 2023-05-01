@@ -1,12 +1,130 @@
-@import "../../scss/variables.scss";
+@import '../../scss/variables.scss';
 
 nav {
+	height: 150px;
+	border-bottom: 8px solid var(--green);
+	padding: 16px 48px;
 
-    .logo {
-        img {}
-    }
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 
-    .menu {
-        a {}
-    }
+	margin-bottom: 72px;
+	position: relative;
+
+	.logo {
+		height: calc(100% + 32px);
+		transform: translateY(64px);
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 1050px) {
+			width: 300px;
+			height: auto;
+			transform: translateY(45px);
+		}
+	}
+
+	@media screen and (max-width: 1050px) {
+		padding: 8px;
+		height: 100px;
+	}
+
+	.menu {
+		display: flex;
+		gap: 32px;
+		a {
+			font-size: 24px;
+			transition: 0.2s ease-in-out;
+			font-weight: 600;
+
+			&:hover {
+				color: var(--green);
+			}
+		}
+
+		@media screen and (max-width: 1050px) {
+			display: none;
+		}
+	}
+
+	.hamburger {
+		display: none;
+		font-family: NerdFont;
+		font-size: 48px;
+		position: absolute;
+		right: 32px;
+		top: calc(50% - 24px);
+		cursor: pointer;
+		background: transparent;
+
+		@media screen and (max-width: 1050px) {
+			display: block;
+		}
+	}
+
+	.mobile-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: var(--white);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+
+		.close {
+			font-family: NerdFont;
+			font-size: 48px;
+			position: absolute;
+			right: 32px;
+			top: 32px;
+			cursor: pointer;
+			background: transparent;
+		}
+
+		.dark-mode-mobile {
+			position: absolute;
+			top: 32px;
+			left: 32px;
+
+			button {
+				font-family: NerdFont;
+				font-size: 48px;
+				background: transparent;
+			}
+		}
+
+		a {
+			font-size: 24px;
+			transition: 0.2s ease-in-out;
+			font-weight: 600;
+			margin-bottom: 32px;
+
+			&:hover {
+				color: var(--green);
+			}
+		}
+	}
+
+	.dark-mode {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+
+		button {
+			font-family: NerdFont;
+			font-size: 48px;
+			background: transparent;
+		}
+		@media screen and (max-width: 1050px) {
+			display: none;
+		}
+	}
 }

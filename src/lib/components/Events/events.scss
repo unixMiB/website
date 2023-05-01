@@ -1,0 +1,17 @@
+@import '../../scss/variables.scss';
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+	max-width: calc(100% - 32px);
+
+	.title {
+		font-size: 48px;
+		font-weight: 600;
+		color: var(--green);
+	}
+}
+
+.events-slider {
+	padding: 32px;
+}
