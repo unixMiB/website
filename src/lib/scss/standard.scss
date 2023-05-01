@@ -1,0 +1,33 @@
+:global(*) {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--green);
+        border-radius: 20px;
+    }
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 100;
+    color: var(--black);
+    user-select: none;
+}
+
+:global(body) {
+    background: var(--white);
+    font-family: DMSans;
+}
+
+:global(body, html) {
+    height: 100%;
+    width: 100%;
+}
