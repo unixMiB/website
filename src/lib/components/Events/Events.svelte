@@ -25,15 +25,17 @@
 	});
 </script>
 
-<div class="container">
-	<div class="title">Eventi</div>
-</div>
+<div class="events">
+	<div class="container">
+		<div class="title">Eventi</div>
+	</div>
 
-<div class="swiper events-slider">
-	<div class="swiper-wrapper">
-		{#each events as event}
-			<Event {...event} />
-		{/each}
+	<div class="swiper events-slider">
+		<div class="swiper-wrapper">
+			{#each events as event}
+				<Event {...event} />
+			{/each}
+		</div>
 	</div>
 </div>
 

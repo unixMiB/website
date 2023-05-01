@@ -3,13 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
 	import { setCookie, getCookie } from '../../helpers/cookieHelper';
-
-	const menu = [
-		{ name: 'Chi siamo', url: '/#chi-siamo' },
-		{ name: 'Eventi', url: '/eventi' },
-		{ name: 'Mercatino', url: '/mercatino' },
-		{ name: 'Contatti', url: '/contatti' }
-	];
+	import menu from '$lib/data/menu';
 
 	let hamburgerOpen = false;
 	let darkModeIcon = '';

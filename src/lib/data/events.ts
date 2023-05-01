@@ -15,13 +15,13 @@ const events = [
         "title": "Linux Day Milano 2023",
         "description": "Una giornata di talk e workshop per conoscere il mondo Linux e opensource. L'evento è gratuito e aperto a tutti.",
         "cover": "",
-        "date": "Da definire"
+        "date": "21 Ottobre 2023"
     },
     {
         "title": "Evento 4",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.",
         "cover": "",
-        "date": "01/10/2023"
+        "date": "1 Aprile 2023"
     }
 ];
 

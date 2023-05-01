@@ -11,14 +11,20 @@
 	flex-direction: column;
 	justify-content: flex-end;
 
+	@media screen and (max-width: 600px) {
+		padding: 16px;
+	}
+
 	.title {
 		color: var(--green);
 		font-size: 32px;
 	}
+
 	.description {
 		line-height: 1.5;
 		margin-bottom: 32px;
 	}
+
 	.date {
 		background: var(--white-alt);
 		width: fit-content;
