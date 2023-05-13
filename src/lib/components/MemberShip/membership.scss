@@ -1,0 +1,27 @@
+@import '$lib/scss/variables.scss';
+
+.membership {
+    @include container;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        @include title;
+    }
+
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        @include button;
+        width: fit-content;
+        margin: 16px auto;
+        font-size: 1.5rem;
+        box-shadow: var(--shadow);
+
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}

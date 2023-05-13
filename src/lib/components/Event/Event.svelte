@@ -5,14 +5,17 @@
 	export let description: string;
 	export let date: string;
 	export let cover: string;
+	export let link: string;
 
 	const backgroundImage = cover ? cover : '';
 </script>
 
-<div
-	class="event swiper-slide"
+<a
+	class="event swiper-slide {link ? 'clickable' : ''}"
 	style="background-image: url('{backgroundImage}');"
 	in:scale={{ duration: 500, delay: 100 }}
+	href={link}
+	target="_blank"
 >
 	<h2 class="title">
 		{title ? title : ''}
@@ -23,7 +26,7 @@
 	<p class="date">
 		{date ? date : ''}
 	</p>
-</div>
+</a>
 
 <style lang="scss">
 	@import './event.scss';

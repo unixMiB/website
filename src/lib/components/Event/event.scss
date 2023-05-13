@@ -1,12 +1,11 @@
 @import '../../scss/variables.scss';
 
 .event {
-	box-shadow: var(--shadow);
+	box-shadow: var(--border-shadow);
 	aspect-ratio: 16/9;
 	padding: 32px;
 	background-size: cover;
 	border-radius: 8px;
-	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -15,20 +14,22 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
+	transition: .2s;
+
 	@media screen and (max-width: 600px) {
 		padding: 16px;
 	}
 
 	.title {
 		color: var(--green);
-		font-size: 32px;
+		font-size: 2rem;
 		margin-bottom: 8px;
 	}
 
 	.description {
 		line-height: 1.5;
 		margin-bottom: 32px;
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 
 	.date {
@@ -36,5 +37,13 @@
 		width: fit-content;
 		padding: 8px 16px;
 		border-radius: 8px;
+	}
+
+	&.clickable {
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 	}
 }

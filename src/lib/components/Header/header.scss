@@ -9,8 +9,14 @@ nav {
 	justify-content: space-between;
 	align-items: flex-end;
 
-	margin-bottom: 72px;
-	position: relative;
+	position: fixed;
+	background-color: var(--white);
+	width: 100%;
+	left: 0;
+	top: 0;
+	box-shadow: var(--shadow);
+
+	z-index: 100;
 
 	.logo {
 		height: calc(100% + 32px);
@@ -44,7 +50,7 @@ nav {
 		gap: 32px;
 
 		a {
-			font-size: 24px;
+			font-size: 1.5rem;
 			transition: 0.2s ease-in-out;
 			font-weight: 600;
 
@@ -61,7 +67,7 @@ nav {
 	.hamburger {
 		display: none;
 		font-family: NerdFont;
-		font-size: 48px;
+		font-size: 3rem;
 		position: absolute;
 		right: 32px;
 		top: calc(50% - 24px);
@@ -88,7 +94,7 @@ nav {
 
 		.close {
 			font-family: NerdFont;
-			font-size: 48px;
+			font-size: 3rem;
 			position: absolute;
 			right: 32px;
 			top: 32px;
@@ -103,14 +109,14 @@ nav {
 
 			button {
 				font-family: NerdFont;
-				font-size: 48px;
+				font-size: 3rem;
 				background: transparent;
 				cursor: pointer;
 			}
 		}
 
 		a {
-			font-size: 24px;
+			font-size: 1.5rem;
 			transition: 0.2s ease-in-out;
 			font-weight: 600;
 			margin-bottom: 32px;
@@ -128,7 +134,7 @@ nav {
 
 		button {
 			font-family: NerdFont;
-			font-size: 48px;
+			font-size: 3rem;
 			background: transparent;
 			cursor: pointer;
 		}
@@ -137,4 +143,8 @@ nav {
 			display: none;
 		}
 	}
+}
+
+.header-spacing {
+	height: 150px;
 }

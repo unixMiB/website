@@ -1,8 +1,1 @@
 @import "$lib/scss/variables";
-
-.two-columns {
-    @include two-columns(500px);
-    @include container;
-
-    background: red;
-}

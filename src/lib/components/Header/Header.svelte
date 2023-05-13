@@ -63,6 +63,8 @@
 	{/if}
 </nav>
 
+<div class="header-spacing" />
+
 <style lang="scss">
 	@import './header.scss';
 </style>
