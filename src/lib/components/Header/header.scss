@@ -33,10 +33,10 @@ nav {
 			transform: translateY(47px);
 		}
 
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 768px) {
 			width: 200px;
 			height: auto;
-			transform: translateY(36px);
+			transform: translateY(34.5px)
 		}
 	}
 
