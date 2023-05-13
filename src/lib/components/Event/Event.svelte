@@ -17,15 +17,21 @@
 	href={link}
 	target="_blank"
 >
-	<h2 class="title">
-		{title ? title : ''}
-	</h2>
-	<p class="description">
-		{description ? description : ''}
-	</p>
-	<p class="date">
-		{date ? date : ''}
-	</p>
+	{#if title}
+		<div class="title">
+			{title}
+		</div>
+	{/if}
+	{#if description}
+		<div class="description">
+			{description}
+		</div>
+	{/if}
+	{#if date}
+		<div class="date">
+			{date}
+		</div>
+	{/if}
 </a>
 
 <style lang="scss">
