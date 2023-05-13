@@ -38,6 +38,7 @@
 	<a href="/" class="logo">
 		<img src={logo} alt="logo" />
 	</a>
+
 	<button class="hamburger" on:click={() => (hamburgerOpen = true)}></button>
 	<div class="menu">
 		{#each menu as link}

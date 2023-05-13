@@ -14,7 +14,7 @@ nav {
 
 	.logo {
 		height: calc(100% + 32px);
-		transform: translateY(64px);
+		transform: translateY(65px);
 
 		img {
 			height: 100%;
@@ -24,13 +24,13 @@ nav {
 		@media screen and (max-width: 1050px) {
 			width: 300px;
 			height: auto;
-			transform: translateY(45px);
+			transform: translateY(47px);
 		}
 
 		@media screen and (max-width: 600px) {
 			width: 200px;
 			height: auto;
-			transform: translateY(34px);
+			transform: translateY(36px);
 		}
 	}
 
@@ -105,6 +105,7 @@ nav {
 				font-family: NerdFont;
 				font-size: 48px;
 				background: transparent;
+				cursor: pointer;
 			}
 		}
 
@@ -129,6 +130,7 @@ nav {
 			font-family: NerdFont;
 			font-size: 48px;
 			background: transparent;
+			cursor: pointer;
 		}
 
 		@media screen and (max-width: 1050px) {

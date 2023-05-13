@@ -1,25 +1,41 @@
+@import '$lib/scss/mixins';
+
 :global(html) {
-	--white: #ffffff;
-	--white-alt: #e8e8e8;
-	--green: #2da235;
-	--black: #424242;
-	--shadow: 0 0 20px -10px var(--black);
+    --white: #ffffff;
+    --white-alt: #e8e8e8;
+    --green: #2da235;
+    --black: #424242;
+    --shadow: 0 0 20px -10px var(--black);
 }
 
 :global(html[data-theme='dark']) {
-	--white: #141414;
-	--white-alt: #1d1d1d;
-	--green: #2da235;
-	--black: #afafaf;
-	--shadow: 0 0 0px 5px var(--green);
+    --white: #141414;
+    --white-alt: #1d1d1d;
+    --green: #2da235;
+    --black: #afafaf;
+    --shadow: 0 0 0px 5px var(--green);
+}
+
+:global(html[data-rgb='true']) {
+    animation: 2s rgb infinite linear;
 }
 
 @font-face {
-	font-family: NerdFont;
-	src: url('/fonts/NerdFont.ttf') format('truetype');
+    font-family: NerdFont;
+    src: url('/fonts/NerdFont.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: DMSans;
-	src: url('/fonts/DMSans.ttf') format('truetype');
+    font-family: DMSans;
+    src: url('/fonts/DMSans.ttf') format('truetype');
+}
+
+@keyframes rgb {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }

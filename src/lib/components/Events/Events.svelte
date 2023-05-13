@@ -3,7 +3,7 @@
 	import Swiper from 'swiper';
 	import 'swiper/css';
 	import Event from '../Event/Event.svelte';
-	import events from '$lib/data/events';
+	import { featuredEvents } from '$lib/data/events';
 
 	onMount(() => {
 		new Swiper('.events-slider', {
@@ -32,7 +32,7 @@
 
 	<div class="swiper events-slider">
 		<div class="swiper-wrapper">
-			{#each events as event}
+			{#each featuredEvents as event}
 				<Event {...event} />
 			{/each}
 		</div>
