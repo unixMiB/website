@@ -1,0 +1,13 @@
+@import '../../scss/variables.scss';
+
+.container {
+	@include container;
+
+	.title {
+		@include title;
+	}
+}
+
+.events-slider {
+	padding: 32px;
+}

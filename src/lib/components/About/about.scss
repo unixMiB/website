@@ -1,0 +1,46 @@
+@import '../../scss/variables.scss';
+
+.container {
+	@include container;
+
+	.title {
+		@include title;
+	}
+
+	.about-container {
+		@include two-columns(375px);
+
+		.image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			float: left;
+			margin: 16px;
+
+			img {
+				object-fit: cover;
+				width: 100%;
+
+			}
+
+			@media screen and (max-width: 600px) {
+				width: calc(100% + 32px);
+				position: relative;
+				left: -32px;
+			}
+		}
+
+		.description {
+			flex: 1 1;
+			padding: 32px;
+			min-width: 300px;
+			font-size: 1.5rem;
+			line-height: 1.5;
+
+			@media screen and (max-width: 600px) {
+				padding: 16px;
+				min-width: unset;
+			}
+		}
+	}
+}

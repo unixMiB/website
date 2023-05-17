@@ -1,47 +1,38 @@
-# unixMiB.github.io
+# create-svelte
 
-## Requirements
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-- `node`, `npm`, `git`, `git-lfs` (https://git-lfs.github.com/)
-- Knowledge of HTML, Sass
-  - Nice to have: Knowledge of Pug (https://github.com/pugjs/pug#syntax)
-    - Very fast to learn if you know html
+## Creating a project
 
-## Working on the project
+If you're seeing this, you've probably already done this step. Congrats!
 
-- `git clone https://github.com/unixMiB/unixmib.github.io`
-- `git lfs pull`
-- `npm install`
-- `npm run hot`
-- Edit files in `src` folder.
-- The website will be available on `http://localhost:8080/index.html`
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-### Building for production
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-- `npm run production`
-- built files will be in the `dist/folder`
+## Developing
 
-## Technologies & Tools
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- Webpack for build management
-  - Most of the work is taken care by [laravel-mix](https://github.com/JeffreyWay/laravel-mix) with a few custom configs inside `webpack.mix.js`
-- Pug for HTML Templating
-- Sass for the style (with a few helper classes)
-- Other: Fontawesome Icons
+```bash
+npm run dev
 
-## Accessibility
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-The skin must be responsive.
+## Building
 
-Don't use blue color for text unless it's a link.
+To create a production version of your app:
 
-HTML5/CSS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/).
+```bash
+npm run build
+```
 
-Use Multimedia Fallback (`alt=""` in img tags and so on). Use `longdesc` attributes when needed.
+You can preview the production build with `npm run preview`.
 
-Keyboard can be used to move between elements of the page without problems.
-If it is necessary use `tabindex`.
-
-Test the website in greyscale and in high contrast.
-
-A `nav` tag must contain one and only one `ul` element.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

@@ -1,0 +1,23 @@
+@import "$lib/scss/variables";
+
+.events {
+    .container {
+        @include container;
+
+        .title {
+            @include title;
+        }
+    }
+
+    .featured-list,
+    .events-list {
+        @include container;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 32px;
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

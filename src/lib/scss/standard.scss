@@ -1,0 +1,56 @@
+:global(*) {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--green);
+        border-radius: 20px;
+    }
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 100;
+    color: var(--black);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:global(:root) {
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+}
+
+:global(html) {
+    scroll-padding-top: 150px;
+}
+
+:global(body) {
+    background: var(--white);
+    font-family: DMSans;
+    transition: 0.2s ease-in-out;
+}
+
+:global(body, html) {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+:global(a) {
+    text-decoration: none;
+}

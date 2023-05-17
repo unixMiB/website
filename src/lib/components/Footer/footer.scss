@@ -1,0 +1,22 @@
+@import '../../scss/variables.scss';
+
+.footer {
+	border-top: 5px solid var(--green);
+	margin-top: 32px;
+	padding: 16px;
+
+	.container {
+		@include container;
+
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	/* .removeCSS, */
+	.rgb {
+		color: var(--green);
+		background-color: transparent;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}

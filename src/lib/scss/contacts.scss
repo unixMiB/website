@@ -1,0 +1,37 @@
+@import "$lib/scss/variables";
+
+.contacts {
+    @include container;
+
+    .title {
+        @include title;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 16px 0;
+
+
+            .icon {
+                font-family: NerdFont;
+                font-size: 2rem;
+                margin-right: 16px;
+            }
+
+            a {
+                color: var(--green);
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+}
