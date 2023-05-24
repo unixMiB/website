@@ -7,18 +7,18 @@
 
 	onMount(() => {
 		new Swiper('.events-slider', {
-			slidesPerView: 1,
+			slidesPerView: 1.5,
 			spaceBetween: 30,
 			autoplay: true,
 			breakpoints: {
 				768: {
-					slidesPerView: 1
+					slidesPerView: 1.5
 				},
 				1200: {
-					slidesPerView: 2
+					slidesPerView: 2.5
 				},
 				1600: {
-					slidesPerView: 3
+					slidesPerView: 3.5
 				}
 			}
 		});
