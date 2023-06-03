@@ -6,7 +6,7 @@
 
 <Header />
 <div class="error">
-	<img src="/error_unixmib.png" alt="" />
+	<img src="/img/error_unixmib.png" alt="" />
 	<div class="status">Errore {$page.status}</div>
 </div>
 <Footer />
