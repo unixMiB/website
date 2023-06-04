@@ -13,7 +13,6 @@
 	const today = new Date();
 
 	function selectLogo() {
-		console.log(today.getMonth());
 		if (today.getMonth() == 5) {
 			return `/img/logos/logo_pride_${darkMode}.png`;
 		} else {
