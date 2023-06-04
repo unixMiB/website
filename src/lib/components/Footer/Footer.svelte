@@ -26,7 +26,7 @@
 	</div>
 
 	<!-- <button class="removeCSS" on:click={removeCSS}>{cssSentence}</button> -->
-	<button class="rgb" on:click={rgbTheme}>RBG</button>
+	<button class="rgb" on:click={rgbTheme}>RGB</button>
 </div>
 
 <style lang="scss">
