@@ -6,6 +6,10 @@
 	import MemberShip from '$lib/components/MemberShip/MemberShip.svelte';
 </script>
 
+<svelte:head>
+	<title>unixMiB - Home</title>
+</svelte:head>
+
 <Header />
 <div class="homepage">
 	<About />

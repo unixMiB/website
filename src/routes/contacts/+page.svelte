@@ -5,6 +5,10 @@
 	import contacts from '$lib/data/contacts';
 </script>
 
+<svelte:head>
+	<title>unixMiB - Contatti</title>
+</svelte:head>
+
 <Header />
 <div class="contacts">
 	<div class="title">Contatti</div>
