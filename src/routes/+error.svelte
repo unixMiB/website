@@ -4,9 +4,13 @@
 	import { page } from '$app/stores';
 </script>
 
+<svelte:head>
+	<title>unixMiB - Errore {$page.status}</title>
+</svelte:head>
+
 <Header />
 <div class="error">
-	<img src="/error_unixmib.png" alt="" />
+	<img src="/img/error_unixmib.png" alt="" />
 	<div class="status">Errore {$page.status}</div>
 </div>
 <Footer />

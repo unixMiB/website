@@ -7,6 +7,10 @@
 	let filteredEvents = featuredEvents.filter((event) => {});
 </script>
 
+<svelte:head>
+	<title>unixMiB - Eventi</title>
+</svelte:head>
+
 <Header />
 <div class="events">
 	<div class="container">

@@ -7,7 +7,19 @@
 
 	let hamburgerOpen = false;
 	let darkModeIcon = '';
-	let logo = '/logo_light.png';
+	let darkMode = 'light';
+	let logo = `/img/logos/logo_${darkMode}.png`;
+
+	const today = new Date();
+
+	function selectLogo() {
+		console.log(today.getMonth());
+		if (today.getMonth() == 5) {
+			return `/img/logos/logo_pride_${darkMode}.png`;
+		} else {
+			return `/img/logos/logo_${darkMode}.png`;
+		}
+	}
 
 	page.subscribe((value) => {
 		if (value.url.hash) {
@@ -16,21 +28,27 @@
 	});
 
 	onMount(() => {
-		const darkMode = getCookie('darkMode');
+		darkMode = getCookie('darkMode') || 'light';
+
+		logo = selectLogo();
+
 		if (darkMode === 'dark') {
-			changeMode();
+			setMode();
 		}
 	});
 
 	function changeMode() {
-		darkModeIcon = darkModeIcon === '' ? '' : '';
-		logo = darkModeIcon === '' ? '/logo_light.png' : '/logo_dark.png';
+		darkMode = darkMode === 'light' ? 'dark' : 'light';
 
-		setCookie('darkMode', darkModeIcon === '' ? 'light' : 'dark', 365);
+		setMode();
+	}
 
-		document
-			.querySelector('html')
-			?.setAttribute('data-theme', darkModeIcon === '' ? 'light' : 'dark');
+	function setMode() {
+		logo = selectLogo();
+
+		darkModeIcon = darkMode === 'light' ? '' : '';
+		setCookie('darkMode', darkMode, 365);
+		document.querySelector('html')?.setAttribute('data-theme', darkMode);
 	}
 </script>
 
