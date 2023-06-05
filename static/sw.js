@@ -10,14 +10,5 @@ self.addEventListener("activate", function (e) {
     })
     .then(function (clients) {
       clients.forEach((client) => client.navigate(client.url));
-    })
-    .then(function () {
-      const answer = window.confirm(
-        `Il sito è stato aggiornato. ` +
-        `Ricaricare per visualizzare la versione aggiornata?`
-      );
-      if (answer === true) {
-        window.location.reload();
-      }
     });
 });
