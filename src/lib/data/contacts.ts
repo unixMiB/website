@@ -7,7 +7,7 @@ const contacts = [
     {
         icon: "",
         name: "Canale Telegram",
-        link: "https://t.me/unixmib"
+        link: "https://t.me/s/unixmib"
     },
     {
         icon: "",
