@@ -26,7 +26,7 @@ const contacts = [
     },
     {
         icon: "󰍎",
-        name: "Piazza della Scienza, Bicocca, Aula U1I36",
+        name: "Piazza della Scienza, Bicocca, U1 Aula 1I36",
         link: "https://goo.gl/maps/saEdD8bw6vM6zieC6"
     }
 ];
