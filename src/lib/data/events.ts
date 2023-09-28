@@ -48,7 +48,7 @@ const featuredEvents = [
         "title": "Vieni in assemblea!",
         "description": "Vieni a trovarci in assemblea per discutere delle prossime iniziative e per conoscere meglio il nostro gruppo. Ti aspettiamo!",
         "cover": "",
-        "date": "Tutti i mercoledì alle 10: 30",
+        "date": "Tutti i giovedì alle 15:00",
         "link": "https://t.me/s/unixmib"
     },
     {
