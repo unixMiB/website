@@ -22,7 +22,7 @@
 
 <div class="footer">
 	<div class="container">
-		Copyright &copy; {year} - unixMiB
+		Copyleft {year} - unixMiB
 	</div>
 
 	<!-- <button class="removeCSS" on:click={removeCSS}>{cssSentence}</button> -->
