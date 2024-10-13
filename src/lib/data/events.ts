@@ -1,5 +1,12 @@
 const events = [
     {
+        "title": "Linux Day Milano 2023",
+        "description": "",
+        "cover": "",
+        "date": "28 Ottobre 2023",
+        "link": "https://www.linuxdaymilano.org/schedule/?year=2023"
+    },
+    {
         "title": "Linux Day Milano 2022",
         "description": "",
         "cover": "",
@@ -38,12 +45,13 @@ const events = [
 
 const featuredEvents = [
     {
-        "title": "Linux Day Milano 2023",
+        "title": "Linux Day Milano 2024",
         "description": "Una giornata di talk e workshop per conoscere il mondo Linux e opensource. L'evento è gratuito e aperto a tutti.",
         "cover": "",
-        "date": "28 Ottobre 2023",
+        "date": "26 Ottobre 2024",
         "link": "https://www.linuxdaymilano.org"
     },
+    /*
     {
         "title": "Vieni in assemblea!",
         "description": "Vieni a trovarci in assemblea per discutere delle prossime iniziative e per conoscere meglio il nostro gruppo. Ti aspettiamo!",
@@ -51,6 +59,7 @@ const featuredEvents = [
         "date": "Tutti i giovedì alle 15:00",
         "link": "https://t.me/s/unixmib"
     },
+    */
     {
         "title": "",
         "description": "",
