@@ -1,5 +1,12 @@
 const events = [
     {
+        "title": "Linux Day Milano 2024",
+        "description": "",
+        "cover": "",
+        "date": "26 Ottobre 2024",
+        "link": "https://www.linuxdaymilano.org/schedule/?year=2024"
+    },
+    {
         "title": "Linux Day Milano 2023",
         "description": "",
         "cover": "",
