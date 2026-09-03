@@ -9,7 +9,7 @@
 		(come @campus.unimib.it o @unimib.it) e unisciti ai nostri canali social
 	</div>
 
-	<a href="https://forms.gle/DLGvc8e8sJ5wDeAM9" target="_blank" class="button">Associati ora</a>
+	<a href="https://forms.gle/oQSU2fbghLpu5nap7" target="_blank" class="button">Associati ora</a>
 </div>
 
 <style lang="scss">
