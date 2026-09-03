@@ -68,7 +68,7 @@
 	</div>
 
 	{#if hamburgerOpen}
-		<div class="mobile-menu" in:fly={{ x: 600 }} out:fly={{ x: 600 }}>
+		<div class="mobile-menu" in:fly|global={{ x: 600 }} out:fly|global={{ x: 600 }}>
 			<button class="close" on:click={() => (hamburgerOpen = false)}></button>
 			<div class="dark-mode-mobile">
 				<button on:click={() => changeMode()}>{darkModeIcon}</button>

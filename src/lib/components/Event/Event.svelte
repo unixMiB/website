@@ -13,7 +13,7 @@
 <a
 	class="event swiper-slide {link ? 'clickable' : ''}"
 	style="background-image: url('{backgroundImage}');"
-	in:scale={{ duration: 500, delay: 100 }}
+	in:scale|global={{ duration: 500, delay: 100 }}
 	href={link}
 	target="_blank"
 >
